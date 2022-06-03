@@ -1,2 +1,2 @@
 #!/bin/bash
-OUTPUT=$(echo $CFILE | sed -r 's/.c/.o/g'); gcc -C $CFILE -o $OUTPUT
+gcc -c $CFILE
