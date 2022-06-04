@@ -8,9 +8,8 @@ int main (void){
 
     char * alphabet = "abcdefghijklmnopqrstuvwxyz";
 
-    for (int i = 0; i < 26 ; ++i) {
-        putchar(alphabet[i]);
-    }
+    int i = 0;
+    while (i < 24){putchar(alphabet[i]);i++;}
     putchar('\n');
 
     return (0);
