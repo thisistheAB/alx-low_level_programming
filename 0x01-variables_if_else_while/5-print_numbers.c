@@ -13,5 +13,7 @@ int main (void){
         num++;
     }
 
+    putchar('\n');
+
     return (0);
 }
