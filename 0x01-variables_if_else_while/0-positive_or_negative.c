@@ -8,7 +8,7 @@
  *
  * Return: This is bullshit
  */
-int main (void)
+int main(void)
 {
 
 int n;
@@ -19,13 +19,13 @@ n = rand() - RAND_MAX / 2;
 
 printf("%d", n);
 
-if (n == 0){
+if (n == 0)
 printf(" is zero\n");
-}else if (n < 0){
+else if (n < 0)
 printf(" is negative\n");
-}else if (n > 0){
+else if (n > 0)
 printf(" is positive\n");
-}
+
 
 return (0);
 }
