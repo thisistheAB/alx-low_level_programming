@@ -14,7 +14,8 @@ char *alphabet = "abcdefghijklmnopqrstuvwxyz";
 int i = 0;
 while (i < 26)
 {
-if (alphabet[i] != 'q' && alphabet[i] != 'e') putchar(alphabet[i]);
+if (alphabet[i] != 'q' && alphabet[i] != 'e')
+putchar(alphabet[i]);
 i++;
 }
 
