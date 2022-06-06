@@ -12,7 +12,8 @@ int main(void)
 char *alphabet = "abcdefghijklmnopqrstuvwxyz";
 
 int i = 0;
-while (i < 26){putchar(alphabet[i]);i++;}
+while (i < 26)
+{putchar(alphabet[i]); i++; }
 putchar('\n');
 
 return (0);
