@@ -8,7 +8,8 @@
  *
  * Return: This is bullshit
  */
-int main(void) {
+int main(void)
+{
 
 char *alphabet = "abcdefghijklmnopqrstuvwxyz";
 char *capsAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
