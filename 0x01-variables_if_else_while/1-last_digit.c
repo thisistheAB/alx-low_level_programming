@@ -3,23 +3,30 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
-int main (void){
+/**
+ * main - This is the main function, FUCK BETTY!!!!!!!!
+ *
+ * Return: This is bullshit
+ */
+int main(void)
+{
 
-    int n;
-    int nLastDigit;
+int n;
+int nLastDigit;
 
-    srand(time(0));
-    n = rand() - RAND_MAX / 2;
-    /* your code goes there */
+srand(time(0));
+n = rand() - RAND_MAX / 2;
 
-    nLastDigit = n % 10;
+nLastDigit = n % 10;
 
-    printf("Last digit of %d is %d ", n, nLastDigit);
+printf("Last digit of %d is %d ", n, nLastDigit);
 
-    if (nLastDigit > 5) printf("and is greater than 5\n");
-    else if (nLastDigit == 0) printf("and is 0\n");
-    else if (nLastDigit != 0 && nLastDigit < 6) printf("and is less than 6 and not 0\n");
+if (nLastDigit > 5)
+printf("and is greater than 5\n");
+else if (nLastDigit == 0)
+printf("and is 0\n");
+else if (nLastDigit < 6)
+printf("and is less than 6 and not 0\n");
 
-    return (0);
+return (0);
 }
