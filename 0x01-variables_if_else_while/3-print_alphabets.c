@@ -23,7 +23,8 @@ putchar(alphabet[i]);
 i++;
 }
 
-while (d < 26){
+while (d < 26)
+{
 putchar(capsAlphabet[d]);
 d++;
 }
