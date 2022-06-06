@@ -1,7 +1,8 @@
 #include <stdio.h>
 /* more headers goes there */
 
-int main(void)/* betty style doc for function main goes there */
+/* main - This is the main function, FUCK BETTY!!!!!!!! */
+int main(void)
 {
 
 fwrite
