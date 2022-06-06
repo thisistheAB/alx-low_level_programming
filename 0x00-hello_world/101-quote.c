@@ -1,7 +1,9 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/* main - This is the main function, FUCK BETTY!!!!!!!! */
+/** 
+ * main - This is the main function, FUCK BETTY!!!!!!!!
+ */
 int main(void)
 {
 
