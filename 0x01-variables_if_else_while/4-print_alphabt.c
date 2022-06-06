@@ -1,19 +1,24 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
-int main (void){
+/**
+ * main - This is the main function, FUCK BETTY!!!!!!!!
+ *
+ * Return: This is bullshit
+ */
+int main(void)
+{
 
-    char * alphabet = "abcdefghijklmnopqrstuvwxyz";
+char *alphabet = "abcdefghijklmnopqrstuvwxyz";
 
-    int i = 0;
-    while (i < 26){
-        if (alphabet[i] != 'q' && alphabet[i] != 'e') putchar(alphabet[i]);
-        i++;
-    }
-    putchar('\n');
+int i = 0;
+while (i < 26)
+{
+if (alphabet[i] != 'q' && alphabet[i] != 'e') putchar(alphabet[i]);
+i++;
+}
 
-    return (0);
+putchar('\n');
+
+return (0);
 }
