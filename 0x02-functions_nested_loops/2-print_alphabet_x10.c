@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet - This is the main function, FUCK BETTY!!!!!!!!
+ * print_alphabet_10 - This is the main function, FUCK BETTY!!!!!!!!
  *
  * Return: This is bullshit
  */
