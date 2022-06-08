@@ -12,7 +12,7 @@ int main(void)
 
 char *output = "_putchar";
 int i = 0;
-while (i<strlen(output))
+while (i<8)
 {
 _putchar(output[i]);
 i++;
