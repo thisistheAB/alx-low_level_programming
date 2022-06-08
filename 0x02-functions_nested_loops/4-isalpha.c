@@ -3,7 +3,7 @@
 
 /**
  * _isalpha - This is the main function, FUCK BETTY!!!!!!!!
- *@c: THE ONE THING I TRULY HATE IN THIS WORLD IS BETTY!!!! CURSE YOU BETTY!!!!!!!!!!!!!!!
+ *@c: THE ONE THING I TRULY HATE IN THIS WORLD IS BETTY!!!!
  *
  * Return: This is bullshit
  */
