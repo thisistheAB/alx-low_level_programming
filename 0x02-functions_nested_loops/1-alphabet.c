@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * print_alphabet - This is the main function, FUCK BETTY!!!!!!!!
+ *
+ * Return: This is bullshit
+ */
 void print_alphabet(void)
 {
 
