@@ -5,7 +5,7 @@
  *
  * Return: This is bullshit
  */
-void print_alphabetx10(void)
+void print_alphabet_x10(void)
 {
 
 char *output = "abcdefghijklmnopqrstuvwxyz";
