@@ -17,59 +17,75 @@ int secondDigitMinute;
 bool totalHour = true;
 bool totalMinute = true;
 
-    while (totalHour){
+while (totalHour)
+{
 
-        firstDigitHour = 0;
+firstDigitHour = 0;
 
-        while (firstDigitHour < 10){
+while (firstDigitHour < 10)
+{
 
-            secondDigitHour = 0;
+secondDigitHour = 0;
 
-            while (secondDigitHour < 10){
+while (secondDigitHour < 10)
+{
 
-                if(firstDigitHour == 2 && secondDigitHour == 4) {firstDigitHour = 10; totalHour = false; break;}
+if (firstDigitHour == 2 && secondDigitHour == 4)
+{
+firstDigitHour = 10;
+totalHour = false;
+break;
+}
 
-                while (totalMinute) {
+while (totalMinute)
+{
 
-                    firstDigitMinute = 0;
+firstDigitMinute = 0;
 
-                    while (firstDigitMinute < 10){
+while (firstDigitMinute < 10)
+{
 
-                        secondDigitMinute = 0;
+secondDigitMinute = 0;
 
-                        while (secondDigitMinute < 10){
+while (secondDigitMinute < 10)
+{
 
-                            if(firstDigitMinute == 6 && secondDigitMinute == 0) {firstDigitMinute = 10; totalMinute = false; break;}
+if(firstDigitMinute == 6 && secondDigitMinute == 0)
+{
+firstDigitMinute = 10;
+totalMinute = false;
+break;
+}
 
-                            _putchar('0' + firstDigitHour);
-                            _putchar('0' + secondDigitHour);
+_putchar('0' + firstDigitHour);
+_putchar('0' + secondDigitHour);
 
-                            _putchar(':');
+_putchar(':');
 
-                            _putchar('0' + firstDigitMinute);
-                            _putchar('0' + secondDigitMinute);
+_putchar('0' + firstDigitMinute);
+_putchar('0' + secondDigitMinute);
 
-                            _putchar('\n');
+_putchar('\n');
 
-                            secondDigitMinute++;
+secondDigitMinute ++;
 
-                        }
+}
 
-                        firstDigitMinute++;
+firstDigitMinute ++;
 
-                    }
+}
 
-                }
+}
 
-                totalMinute = true;
-                secondDigitHour++;
+totalMinute = true;
+secondDigitHour ++;
 
-            }
+}
 
-            firstDigitHour++;
+firstDigitHour ++;
 
-        }
+}
 
-    }
+}
 
 }
