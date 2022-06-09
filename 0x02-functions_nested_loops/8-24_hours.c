@@ -4,7 +4,7 @@
 /**
  * jack_bauer - This is the main function, FUCK BETTY!!!!!!!!
  *
- * Return: This is bullshit
+ * Return: This is bullshit!
  */
 void jack_bauer(void)
 {
