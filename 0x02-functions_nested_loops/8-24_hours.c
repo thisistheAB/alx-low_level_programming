@@ -50,7 +50,7 @@ secondDigitMinute = 0;
 while (secondDigitMinute < 10)
 {
 
-if(firstDigitMinute == 6 && secondDigitMinute == 0)
+if (firstDigitMinute == 6 && secondDigitMinute == 0)
 {
 firstDigitMinute = 10;
 totalMinute = false;
@@ -67,22 +67,22 @@ _putchar('0' + secondDigitMinute);
 
 _putchar('\n');
 
-secondDigitMinute ++;
+secondDigitMinute++;
 
 }
 
-firstDigitMinute ++;
+firstDigitMinute++;
 
 }
 
 }
 
 totalMinute = true;
-secondDigitHour ++;
+secondDigitHour++;
 
 }
 
-firstDigitHour ++;
+firstDigitHour++;
 
 }
 
