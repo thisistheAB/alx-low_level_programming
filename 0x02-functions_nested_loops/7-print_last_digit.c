@@ -16,6 +16,11 @@ if (lastDigit == -4)
 _putchar('4');
 return (4);
 }
+else if (lastDigit == -8)
+{
+_putchar('8');
+return (8);
+}
 else
 {
 _putchar('0' + lastDigit);
