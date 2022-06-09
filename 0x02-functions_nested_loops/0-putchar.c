@@ -10,7 +10,7 @@
 int main(void)
 {
 
-char *output = "_putchar";
+char *output = "_putchar.c";
 int i = 0;
 while (i < 8)
 {
