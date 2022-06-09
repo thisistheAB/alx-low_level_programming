@@ -6,10 +6,12 @@
  *
  * Return: This is bullshit
  */
-int print_last_digit(int iNumber)
+int print_last_digit(int n)
 {
 
-int lastDigit = iNumber % 10;
+int lastDigit = n % 10;
+
+_putchar('0'+lastDigit);
 
 return (lastDigit);
 
