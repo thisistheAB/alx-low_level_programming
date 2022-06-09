@@ -6,3 +6,4 @@ int _isalpha(int c);
 int print_sign(int n);
 int _abs(int iNumber);
 int print_last_digit(int);
+#include <math.h>
