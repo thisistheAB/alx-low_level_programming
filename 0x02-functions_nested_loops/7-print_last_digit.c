@@ -9,8 +9,6 @@
 int print_last_digit(int iNumber)
 {
 
-int testNumber = 5536;
-
 int lastDigit = iNumber % 10;
 
 return (lastDigit);
