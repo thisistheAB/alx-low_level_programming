@@ -1,4 +1,5 @@
 #include "main.h"
+#include <math.h>
 
 /**
  * print_last_digit - This is the main function, FUCK BETTY!!!!!!!!
@@ -9,7 +10,7 @@
 int print_last_digit(int n)
 {
 
-int lastDigit = n % 10;
+int lastDigit = abs(n % 10);
 
 _putchar('0' + lastDigit);
 
