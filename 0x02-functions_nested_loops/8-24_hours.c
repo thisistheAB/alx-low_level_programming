@@ -2,8 +2,7 @@
 #include "main.h"
 
 /**
- * _isalpha - This is the main function, FUCK BETTY!!!!!!!!
- *@c: THE ONE THING I TRULY HATE IN THIS WORLD IS BETTY!!!!
+ * jack_bauer - This is the main function, FUCK BETTY!!!!!!!!
  *
  * Return: This is bullshit
  */
