@@ -2,8 +2,8 @@
 #include "main.h"
 
 /**
- * print_alphabet - This is the main function, FUCK BETTY!!!!!!!!
- *@c: THE ONE THING I TRULY HATE IN THIS WORLD IS BETTY!!!!
+ * _abs - This is the main function, FUCK BETTY!!!!!!!!
+ *@iNumber: THE ONE THING I TRULY HATE IN THIS WORLD IS BETTY!!!!
  *
  * Return: This is bullshit
  */
