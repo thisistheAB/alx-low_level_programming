@@ -3,7 +3,7 @@
 
 /**
  * print_last_digit - This is the main function, FUCK BETTY!!!!!!!!
- *@iNumber: THE ONE THING I TRULY HATE IN THIS WORLD IS BETTY!!!!
+ *@n: THE ONE THING I TRULY HATE IN THIS WORLD IS BETTY!!!!
  *
  * Return: This is bullshit
  */
