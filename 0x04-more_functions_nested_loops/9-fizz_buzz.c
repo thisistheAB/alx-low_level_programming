@@ -19,12 +19,11 @@ int main(void)
             if ((counter % 5) == 0) {
                 printf("Buzz");
             }
-            printf(" ");
         }else{
             printf("%d", counter);
-            printf(" ");
         }
 
+        printf(" ");
         counter++;
 
     }
