@@ -17,14 +17,11 @@ int counter = 0;
 while (counter <= 14)
 {
 
+_putchar((counter / 10) + '0');
+
 if (counter >= 10)
 {
-_putchar((counter / 10) + '0');
 _putchar((counter % 10) + '0');
-}
-else
-{
-_putchar(counter + '0');
 }
 
 counter++;
@@ -33,7 +30,5 @@ counter++;
 _putchar('\n');
 timesCounter++;
 }
-
-_putchar('\n');
 
 }
