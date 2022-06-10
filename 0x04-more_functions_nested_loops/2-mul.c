@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _mul - This is the main function, FUCK BETTY!!!!!!!!
+ * mul - This is the main function, FUCK BETTY!!!!!!!!
  *@a: THE ONE THING I TRULY HATE IN THIS WORLD IS BETTY!!!!
  *@b: This sucks
  *
