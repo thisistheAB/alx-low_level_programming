@@ -25,13 +25,14 @@ printf("Buzz");
 }
 else
 {
-if (counter < 100)
-{
 printf("%d", counter);
 }
+
+if (counter < 100)
+{
+putchar(' ');
 }
 
-putchar(' ');
 counter++;
 
 }
