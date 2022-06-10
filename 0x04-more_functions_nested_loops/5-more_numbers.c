@@ -34,6 +34,4 @@ _putchar('\n');
 timesCounter++;
 }
 
-_putchar('\n');
-
 }
