@@ -15,6 +15,7 @@ int main(void)
         if((counter % 3) == 0 || (counter % 5) == 0){
             if ((counter % 3) == 0) {
                 printf("Fizz");
+                if ((counter % 5) == 0) printf(" ");
             }
             if ((counter % 5) == 0) {
                 printf("Buzz");
