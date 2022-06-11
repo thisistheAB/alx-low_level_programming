@@ -3,9 +3,7 @@
 /**
  * main - Entry point
  *
- * prints text
- *
- * Returns 0
+ * Return: 0
  */
 int main(void)
 {
