@@ -22,7 +22,7 @@ printf
 ("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(sLongInt));
 printf
 ("Size of a long long int: %lu byte(s)\n",
- (unsigned long)sizeof(sLongLongInt));
+(unsigned long)sizeof(sLongLongInt));
 printf
 ("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(sFloat));
 
