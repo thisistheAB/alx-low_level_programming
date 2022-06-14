@@ -17,7 +17,8 @@ int main(void)
 
     int comb2;
 
-    for (int i = 0; i < 100; i++) {
+    int i = 0;
+    while (i < 100) {
 
         if (number > 9){
 
@@ -26,9 +27,11 @@ int main(void)
 
             comb2 = 0;
             int remainder;
-            for (int j = number; j != 0; j /= 10) {
+            int j = number;
+            while (j != 0) {
                 remainder = j % 10;
                 comb2 = comb2 * 10 + remainder;
+                j /= 10;
             }
 
             bool isRepetition = pos2 != 0;
@@ -51,6 +54,7 @@ int main(void)
         }
 
         number++;
+        i++;
 
     }
 
