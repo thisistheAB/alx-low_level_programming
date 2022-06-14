@@ -18,6 +18,7 @@ int main(void)
     int comb2;
 
     int remainder;
+    int j;
 
     int i = 0;
     while (i < 100) {
@@ -29,7 +30,7 @@ int main(void)
 
             comb2 = 0;
 
-            int j = number;
+            j = number;
 
             while (j != 0) {
                 remainder = j % 10;
