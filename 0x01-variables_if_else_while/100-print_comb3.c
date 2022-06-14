@@ -17,6 +17,8 @@ int main(void)
 
     int comb2;
 
+    int remainder;
+
     int i = 0;
     while (i < 100) {
 
@@ -26,18 +28,16 @@ int main(void)
             pos2 = number%10;
 
             comb2 = 0;
-            int remainder;
+
             int j = number;
+
             while (j != 0) {
                 remainder = j % 10;
                 comb2 = comb2 * 10 + remainder;
                 j /= 10;
             }
 
-            bool isRepetition = pos2 != 0;
-            bool isSmallestCombination = comb2 > number;
-
-            if (isRepetition && isSmallestCombination) {
+            if (pos2 != 0 && comb2 > number) {
                 putchar(pos1 + '0');
                 putchar(pos2 + '0');
                 if (number != 89){
