@@ -26,4 +26,6 @@ printf("%c", str[indexCounter]);
 indexCounter++;
 }
 
+printf("\n");
+
 }
