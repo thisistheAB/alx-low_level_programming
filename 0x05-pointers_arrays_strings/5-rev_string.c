@@ -3,7 +3,7 @@
 
 /**
  * rev_string - Reverses a string.... TFFF did I just do it right???
- * @c: This shit.... aaaand we're back to normal... phew
+ * @s: This shit.... aaaand we're back to normal... phew
  *
  * Return: This language is outdated... just saying..
  */
