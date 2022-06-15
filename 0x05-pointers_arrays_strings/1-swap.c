@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * swap - Nothing
+ * swap_int - Nothing
  * @a: Nothing
  * @b: Nothing
  *
