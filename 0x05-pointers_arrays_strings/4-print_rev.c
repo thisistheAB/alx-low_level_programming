@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 
 /**
  * print_rev - Null pointer exception
@@ -11,7 +12,7 @@
 void print_rev(const char *s)
 {
 
-int inputLength = _strlen(s);
+int inputLength = (int) strlen(s);
 
 while (inputLength >= 0)
 {
