@@ -18,6 +18,7 @@ while (inputLength >= 0)
 {
 
 putchar(s[inputLength]);
+putchar('\n');
 inputLength--;
 
 }
