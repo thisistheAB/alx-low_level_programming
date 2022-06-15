@@ -13,14 +13,16 @@ void print_rev(const char *s)
 {
 
 int inputLength = (int) strlen(s);
+char letter;
 
 while (inputLength >= 0)
 {
 
-putchar(s[inputLength]);
+letter = s[inputLength];
+printf("%c", letter);
 inputLength--;
 
 }
-putchar('\n');
+printf("\n");
 
 }
