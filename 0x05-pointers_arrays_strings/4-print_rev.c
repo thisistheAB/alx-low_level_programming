@@ -12,7 +12,7 @@
 void print_rev(const char *s)
 {
 
-int inputLength = (int) strlen(s);
+int inputLength = (int) strlen(s) - 1;
 char letter;
 
 while (inputLength >= 0)
