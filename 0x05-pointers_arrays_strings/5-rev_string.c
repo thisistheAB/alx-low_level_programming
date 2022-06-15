@@ -11,7 +11,7 @@
 void rev_string(char *s)
 {
 int inputLength = (int) strlen(s);
-char copy[100];
+char copy[400];
 int reverseCounter = 0;
 char letter;
 int secondCounter = inputLength - 1;
