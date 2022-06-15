@@ -12,9 +12,9 @@
 void puts_half(char *str)
 {
 
-int inputLength = (int) strlen(str);
+long long int inputLength = (long long int) strlen(str);
 
-int indexCounter = (int) inputLength/2;
+long long int indexCounter = (long long int) inputLength / 2;
 if (inputLength % 2 != 0)
 {
 indexCounter = (inputLength - 1) / 2;
