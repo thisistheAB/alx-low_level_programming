@@ -13,9 +13,10 @@
 char *string_toupper(char *iString)
 {
 
-char upperString[900] = {};
+char upperString[900];
 int indexCounter = 0;
 long int inputLength = (long int) strlen(iString);
+char *upperPointer;
 char tempChar;
 
 while (indexCounter < inputLength)
@@ -26,7 +27,7 @@ upperString[indexCounter] = tempChar;
 indexCounter++;
 }
 
-char *upperPointer = strncpy(iString, upperString, inputLength);
+upperPointer = strncpy(iString, upperString, inputLength);
 
 return (upperPointer);
 
