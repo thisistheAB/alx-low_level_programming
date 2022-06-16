@@ -5,7 +5,7 @@
 int checkChar(char inputChar);
 
 /**
- * cap_string: I am...
+ * cap_string - I am...
  * @inputString: ... Inevitable
  *
  * Return: And I... Am... IRONMAN
@@ -48,7 +48,7 @@ return (capitalizedPointer);
 }
 
 /**
- * checkChar: I am...
+ * checkChar - I am...
  * @inputChar: ... Inevitable
  *
  * Return: And I... Am... IRONMAN
