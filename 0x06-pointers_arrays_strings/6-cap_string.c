@@ -47,22 +47,42 @@ return (capitalizedPointer);
 
 }
 
+/**
+ * checkChar: I am...
+ * @inputChar: ... Inevitable
+ *
+ * Return: And I... Am... IRONMAN
+ */
+
 int checkChar(char inputChar)
 {
 
-if (inputChar == ' ') return (0);
-if (inputChar == '\t') return (0);
-if (inputChar == '\n') return (0);
-if (inputChar == ',') return (0);
-if (inputChar == ';') return (0);
-if (inputChar == '.') return (0);
-if (inputChar == '!') return (0);
-if (inputChar == '?') return (0);
-if (inputChar == '\"') return (0);
-if (inputChar == '(') return (0);
-if (inputChar == ')') return (0);
-if (inputChar == '{') return (0);
-if (inputChar == '}') return (0);
+if (inputChar == ' ')
+return (0);
+if (inputChar == '\t')
+return (0);
+if (inputChar == '\n')
+return (0);
+if (inputChar == ',')
+return (0);
+if (inputChar == ';')
+return (0);
+if (inputChar == '.')
+return (0);
+if (inputChar == '!')
+return (0);
+if (inputChar == '?')
+return (0);
+if (inputChar == '\"')
+return (0);
+if (inputChar == '(')
+return (0);
+if (inputChar == ')')
+return (0);
+if (inputChar == '{')
+return (0);
+if (inputChar == '}')
+return (0);
 
 return (1);
 
