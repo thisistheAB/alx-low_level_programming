@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 
 /**
  * reverse_array - This function reverses an array... NOOO SHIIIT
