@@ -13,7 +13,7 @@
 char *string_toupper(char *iString)
 {
 
-char upperString[900];
+char upperString[900] = {0};
 int indexCounter = 0;
 long int inputLength = (long int) strlen(iString);
 char tempChar;
