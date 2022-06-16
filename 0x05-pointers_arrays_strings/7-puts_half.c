@@ -21,7 +21,7 @@ indexCounter = (inputLength - 1) / 2;
 }
 if (inputLength > 224)
 {
-inputLength = inputLength - 1;
+indexCounter = indexCounter + 1;
 }
 
 while (indexCounter < inputLength)
