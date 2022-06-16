@@ -11,7 +11,7 @@
 void reverse_array(int *a, int n)
 {
 
-int reversedString[n];
+int reversedString[900] = {0};
 int indexCounter = 0;
 int reversedIndexCounter = n - 1;
 
