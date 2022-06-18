@@ -2,6 +2,8 @@
 #include <ctype.h>
 #include <string.h>
 
+char evaluateChar (char defaultValue);
+
 /**
  * leet - This is the leet function, LEEEEEEEET
  * @inputString: Music & Lights, I sing and dance to you all night
@@ -12,37 +14,62 @@
 char *leet(char *inputString)
 {
 
-char replacementChars[] = {'a', 'e', 'o', 't', 'l'};
-char replacingNumbers[] = {'4', '3', '0', '7', '1'};
-char returnString[900];
+char leetString[900];
 char *returnPointer;
 
 long int inputLength = (long int) strlen(inputString);
-int replacementLength = 5;
 int inputIndex = 0;
-int replacementIndex = 0;
 
 char evaluationChar;
-char replacementChar;
-char capReplacementChar;
 
 while (inputIndex < inputLength)
 {
 
 evaluationChar = inputString[inputIndex];
 
-replacementIndex = 0;
+leetString[inputIndex] = evaluateChar(evaluationChar);
+inputIndex++;
+
+}
+
+returnPointer = strncpy(inputString, leetString, inputLength);
+
+return (returnPointer);
+
+}
+
+/**
+ * evaluateChar - This is a ridiculous style of code
+ * @defaultValue: Absolutely DIRTYYYY
+ *
+ * Return: FUCK BEETTTYYYY
+ */
+
+char evaluateChar(char defaultValue)
+{
+
+char finishedValue = defaultValue;
+
+char replacementChars[] = {'a', 'e', 'o', 't', 'l'};
+char replacingNumbers[] = {'4', '3', '0', '7', '1'};
+
+int replacementLength = 5;
+int replacementIndex = 0;
+
+char replacementChar;
+char capReplacementChar;
+
 while (replacementIndex < replacementLength)
 {
 
 replacementChar = replacementChars[replacementIndex];
 capReplacementChar = toupper(replacementChar);
 
-if ((evaluationChar == replacementChar) ||
-(evaluationChar == capReplacementChar))
+if ((defaultValue == replacementChar) ||
+(defaultValue == capReplacementChar))
 {
 
-evaluationChar = replacingNumbers[replacementIndex];
+finishedValue = replacingNumbers[replacementIndex];
 
 }
 
@@ -50,13 +77,6 @@ replacementIndex++;
 
 }
 
-returnString[inputIndex] = evaluationChar;
-inputIndex++;
-
-}
-
-returnPointer = strncpy(inputString, returnString, inputLength);
-
-return (returnPointer);
+return (finishedValue);
 
 }
