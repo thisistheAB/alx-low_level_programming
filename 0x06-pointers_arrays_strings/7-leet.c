@@ -2,7 +2,7 @@
 #include <ctype.h>
 #include <string.h>
 
-char evaluateChar (char defaultValue);
+char evaluateChar(char defaultValue);
 
 /**
  * leet - This is the leet function, LEEEEEEEET
@@ -15,7 +15,7 @@ char *leet(char *inputString)
 {
 
 char leetString[900];
-char *returnPointer;
+char *leetPointer;
 
 long int inputLength = (long int) strlen(inputString);
 int inputIndex = 0;
@@ -32,9 +32,9 @@ inputIndex++;
 
 }
 
-returnPointer = strncpy(inputString, leetString, inputLength);
+leetPointer = strncpy(inputString, leetString, inputLength);
 
-return (returnPointer);
+return (leetPointer);
 
 }
 
