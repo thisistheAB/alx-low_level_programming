@@ -5,7 +5,7 @@
 char evaluateChar(char defaultValue);
 
 /**
- * leet - This is the leet function, LEEEEEEEET
+ * leet - This is the leet functions, LEEEEEEEET
  * @inputString: Music & Lights, I sing and dance to you all night
  *
  * Return: Oh and... FUCK BEETTTYYYY
@@ -63,7 +63,7 @@ while (replacementIndex < replacementLength)
 {
 
 replacementChar = replacementChars[replacementIndex];
-capReplacementChar = toupper(replacementChar);
+capReplacementChar = (char) toupper(replacementChar);
 
 if ((defaultValue == replacementChar) ||
 (defaultValue == capReplacementChar))
