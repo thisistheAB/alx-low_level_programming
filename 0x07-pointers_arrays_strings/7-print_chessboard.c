@@ -1,7 +1,10 @@
 #include "main.h"
 
-/*
+/**
+ * print_chessboard - AfriHerbal
+ * @a: Supremacist piece of shit
  *
+ * Return: Your insecurities are so blatantly obvious
  */
 
 void print_chessboard(char (*a)[8])
