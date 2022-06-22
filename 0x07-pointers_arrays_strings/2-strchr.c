@@ -1,7 +1,7 @@
 #include "main.h"
 #include <string.h>
 
-/*
+/**
  * _strchr - Amenadiel
  * @s: Uriel
  * @c: Ethaniel
