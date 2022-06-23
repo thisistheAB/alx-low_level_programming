@@ -41,7 +41,7 @@ while (indexCounter < iArraySize)
 
 currentInt = iArray[incrementalCounter];
 sumCounter = sumCounter + currentInt;
-incrementalCounter += iArraySize+1;
+incrementalCounter += iArraySize + 1;
 indexCounter++;
 
 }
@@ -71,7 +71,7 @@ while (indexCounter < iArraySize)
 
 currentInt = iArray[incrementalCounter];
 sumCounter = sumCounter + currentInt;
-incrementalCounter += iArraySize-1;
+incrementalCounter += iArraySize - 1;
 indexCounter++;
 
 }
