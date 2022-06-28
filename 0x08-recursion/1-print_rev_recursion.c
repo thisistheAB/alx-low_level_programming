@@ -30,7 +30,9 @@ print_recursively(inputLength, s);
 void print_recursively(int size, char *iString)
 {
 if (size < 0)
-    return;
+{
+return;
+}
 
 _putchar(iString[size]);
 print_recursively(size - 1, iString);
