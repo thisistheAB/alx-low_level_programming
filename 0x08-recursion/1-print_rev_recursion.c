@@ -29,15 +29,10 @@ print_recursively(inputLength, s);
 
 void print_recursively(int size, char *iString)
 {
-
-char currentChar = iString[size];
-
 if (size < 0)
 {
 return;
 }
-
-_putchar(currentChar);
+_putchar(iString[size]);
 print_recursively(size - 1, iString);
-
 }
