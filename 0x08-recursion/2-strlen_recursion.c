@@ -3,7 +3,7 @@
 
 /**
  * _strlen_recursion - Place the semen
- * @s
+ * @s: Meaningless
  *
  * Return: Nothing at all
  */
