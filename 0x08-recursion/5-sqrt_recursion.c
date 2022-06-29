@@ -11,7 +11,7 @@
 int _sqrt_recursion(int n)
 {
 
-long long squareRoot;
+long squareRoot;
 
 if (n < 0)
 {
