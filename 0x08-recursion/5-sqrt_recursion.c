@@ -1,5 +1,6 @@
 #include "main.h"
 #include <math.h>
+#include <stdlib.h>
 
 /**
  * _sqrt_recursion - Kisab z'koneley
@@ -18,7 +19,7 @@ if (n < 0)
 return (-1);
 }
 
-squareRoot = (long) sqrt(n);
+squareRoot = (long) sqrtf((float) n);
 
 if (squareRoot * squareRoot == n)
 {
