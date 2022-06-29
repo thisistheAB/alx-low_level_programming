@@ -11,12 +11,14 @@
 int _sqrt_recursion(int n)
 {
 
+long long squareRoot;
+
 if (n < 0)
 {
 return (-1);
 }
 
-long long squareRoot = sqrt(n);
+squareRoot = sqrt(n);
 
 if (squareRoot * squareRoot == n)
 {
