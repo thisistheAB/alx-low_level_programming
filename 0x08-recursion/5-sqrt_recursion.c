@@ -18,7 +18,7 @@ if (n < 0)
 return (-1);
 }
 
-squareRoot = sqrt(n);
+squareRoot = (long) sqrt(n);
 
 if (squareRoot * squareRoot == n)
 {
