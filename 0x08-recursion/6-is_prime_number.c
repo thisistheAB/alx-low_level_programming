@@ -16,6 +16,13 @@ return (checkPrime(n, 2));
 
 }
 
+/**
+ * is_prime_number - Babababababbam
+ * @n: barararararam
+ *
+ * Return: dulululu lul ulu ludu udu
+ */
+
 int checkPrime(int iNumber, int iChecker)
 {
 
