@@ -1,6 +1,6 @@
 #include "main.h"
-#include <math.h>
-#include <stdlib.h>
+
+int squareLoop(int iNumber, int iCheck);
 
 /**
  * _sqrt_recursion - Kisab z'koneley
@@ -12,22 +12,21 @@
 int _sqrt_recursion(int n)
 {
 
-long squareRoot;
+return squareLoop(n, 0);
 
-if (n < 0)
+}
+
+int squareLoop(int iNumber, int iCheck)
+{
+if (iCheck * iCheck == iNumber)
+{
+return (iCheck);
+}
+if (iCheck >= iNumber)
 {
 return (-1);
 }
 
-squareRoot = (long) sqrtf((float) n);
-
-if (squareRoot * squareRoot == n)
-{
-return ((int) squareRoot);
-}
-else
-{
-return (-1);
-}
+return (squareLoop(iNumber, iCheck+1));
 
 }
