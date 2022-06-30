@@ -17,8 +17,9 @@ return (checkPrime(n, 2));
 }
 
 /**
- * is_prime_number - Babababababbam
- * @n: barararararam
+ * checkPrime - Babababababbam
+ * @iNumber: barararararam
+ * @iChecker: I tried so hard, and got so far
  *
  * Return: dulululu lul ulu ludu udu
  */
