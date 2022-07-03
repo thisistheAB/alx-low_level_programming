@@ -1,0 +1,2308 @@
+!<arch>
+//                                              600       `
+0-positive_or_negative.c/
+0-puts_recursion.c/
+1-print_rev_recursion.c/
+10-print_triangle.c/
+100-print_comb3.c/
+100-set_string.c/
+2-largest_number.c/
+2-print_alphabet.c/
+2-print_alphabet_x10.c/
+2-strlen_recursion.c/
+3-print_alphabets.c/
+3-print_numbers.c/
+3-print_remaining_days.c/
+4-pow_recursion.c/
+4-print_alphabt.c/
+4-print_most_numbers.c/
+5-more_numbers.c/
+5-print_numbers.c/
+5-sqrt_recursion.c/
+5-string_toupper.c/
+6-is_prime_number.c/
+6-print_numberz.c/
+7-print_chessboard.c/
+7-print_diagonal.c/
+7-print_last_digit.c/
+7-print_tebahpla.c/
+8-print_base16.c/
+8-print_diagsums.c/
+8-print_square.c/
+0-isupper.c/    0           0     0     644     305       `
+#include <ctype.h>
+#include "main.h"
+
+/**
+ * _isupper - This is the main function, FUCK BETTY!!!!!!!!
+ *@c: THE ONE THING I TRULY HATE IN THIS WORLD IS BETTY!!!!
+ *
+ * Return: This is bullshit
+ */
+int _isupper(int c)
+{
+
+int checker = isupper(c);
+
+if (checker == 0)
+{
+return (0);
+}
+else
+{
+return (1);
+}
+
+}
+
+0-memset.c/     0           0     0     644     251       `
+#include "main.h"
+#include <string.h>
+
+/**
+ * _memset - This is BoB
+ * @s: say hi bob
+ * @b: hi bob
+ * @n: I do not say blah blah blah
+ *
+ * Return: Yes you do
+ *
+ */
+
+char *_memset(char *s, char b, unsigned int n)
+{
+
+memset(s, b, n);
+
+return (s);
+
+}
+
+/0              0           0     0     644     357       `
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
+/* more headers goes there */
+
+/**
+ * main - This is the main function, FUCK BETTY!!!!!!!!
+ *
+ * Return: This is bullshit
+ */
+void positive_or_negative(int i)
+{
+
+printf("%d", i);
+
+if (i == 0)
+printf(" is zero\n");
+else if (i < 0)
+printf(" is negative\n");
+else if (i > 0)
+printf(" is positive\n");
+}
+
+0-putchar.c/    0           0     0     644     298       `
+#include <string.h>
+#include "main.h"
+/* more headers goes there */
+
+/**
+ * main - This is the main function, FUCK BETTY!!!!!!!!
+ *
+ * Return: This is bullshit
+ */
+int main(void)
+{
+
+char *output = "_putchar.c";
+int i = 0;
+while (i < 8)
+{
+_putchar(output[i]);
+i++;
+}
+
+_putchar('\n');
+
+return (0);
+}
+/26             0           0     0     644     178       `
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * _puts_recursion - it puts
+ * @s: it doesn't put
+ *
+ * Return: To put or not to put
+ */
+
+void _puts_recursion(char *s)
+{
+
+puts(s);
+
+}
+0-reset_to_98.c/0           0     0     644     173       `
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * reset_to_98 - NOTHING!!!!!
+ * @n: Bull Shit
+ *
+ * Return: IT'S A GODDAMN VOID!!!!!
+ */
+
+void reset_to_98(int *n)
+{
+
+*n = 98;
+
+}
+
+0-strcat.c/     0           0     0     644     291       `
+#include "main.h"
+#include <string.h>
+
+/**
+ * _strcat - Betty is.... still shit
+ * @dest: Still haven't changed my views
+ * @src: And I never will :)
+ *
+ * Return: Betty is a dick!
+ */
+
+char *_strcat(char *dest, char *src)
+{
+
+char *returnValue = strcat(dest, src);
+
+return (returnValue);
+
+}
+
+1-alphabet.c/   0           0     0     644     273       `
+#include "main.h"
+
+/**
+ * print_alphabet - This is the main function, FUCK BETTY!!!!!!!!
+ *
+ * Return: This is bullshit
+ */
+void print_alphabet(void)
+{
+
+char *output = "abcdefghijklmnopqrstuvwxyz";
+int i = 0;
+while (i < 26)
+{
+_putchar(output[i]);
+i++;
+}
+
+_putchar('\n');
+}
+
+1-isdigit.c/    0           0     0     644     305       `
+#include <ctype.h>
+#include "main.h"
+
+/**
+ * _isdigit - This is the main function, FUCK BETTY!!!!!!!!
+ *@c: THE ONE THING I TRULY HATE IN THIS WORLD IS BETTY!!!!
+ *
+ * Return: This is bullshit
+ */
+int _isdigit(int c)
+{
+
+int checker = isdigit(c);
+
+if (checker == 0)
+{
+return (0);
+}
+else
+{
+return (1);
+}
+
+}
+
+1-last_digit.c/ 0           0     0     644     527       `
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
+/* more headers goes there */
+
+/**
+ * main - This is the main function, FUCK BETTY!!!!!!!!
+ *
+ * Return: This is bullshit
+ */
+int main(void)
+{
+
+int n;
+int nLastDigit;
+
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+
+nLastDigit = n % 10;
+
+printf("Last digit of %d is %d ", n, nLastDigit);
+
+if (nLastDigit > 5)
+printf("and is greater than 5\n");
+else if (nLastDigit == 0)
+printf("and is 0\n");
+else if (nLastDigit < 6)
+printf("and is less than 6 and not 0\n");
+
+return (0);
+}
+
+1-main.c/       0           0     0     644     250       `
+#include <stdio.h>
+
+/**
+* main - causes an infinite loop
+* Return: 0
+*/
+
+int main(void)
+{
+int i;
+
+printf("Infinite loop incoming :(\n");
+
+i = 0;
+
+/*while (i < 10)*/
+/*{*/
+/*putchar(i);*/
+/*}*/
+
+printf("Infinite loop avoided! \\o/\n");
+
+return (0);
+}
+1-memcpy.c/     0           0     0     644     315       `
+#include "main.h"
+#include <string.h>
+
+/**
+ * _memcpy - The force is strong in this one
+ * @dest: this is where the fun begins
+ * @src: you were my brother Anikin
+ * @n: I HATE YOU
+ *
+ * Return: I have failed you
+ */
+
+char *_memcpy(char *dest, char *src, unsigned int n)
+{
+
+memcpy(dest, src, n);
+
+return (dest);
+
+}
+
+/46             0           0     0     644     666       `
+#include "main.h"
+#include <string.h>
+
+void print_recursively(int size, char *iString);
+
+/**
+ * _print_rev_recursion - This shit again
+ * @s: betty... you're a piece of shit
+ *
+ * Return: NOTHING. ABSOLUTELY FUCKING NOTHING
+ */
+
+void _print_rev_recursion(char *s)
+{
+
+int inputLength = (int) strlen(s) - 1;
+
+print_recursively(inputLength, s);
+
+}
+
+/**
+ * print_recursively - this is a comment
+ * @size: this is a stupid comment
+ * @iString: this is a very stupid comment
+ *
+ * Return: IT. IS. A. FUCKING. VOIIIIIIDDDDDDD
+ */
+
+void print_recursively(int size, char *iString)
+{
+if (size < 0)
+{
+return;
+}
+
+_putchar(iString[size]);
+print_recursively(size - 1, iString);
+}
+1-strncat.c/    0           0     0     644     451       `
+#include "main.h"
+#include <string.h>
+
+/**
+ * _strncat - Sighhh.... I don't even know what to say at this point
+ * @dest: You're forcing your dirty style of code upon us
+ * @src: This is a violation of my human rights
+ * @n: I'll report you to the international human rights commission
+ *
+ * Return: Horrid violations department
+ */
+
+char *_strncat(char *dest, char *src, int n)
+{
+
+char *returnValue = strncat(dest, src, n);
+
+return (returnValue);
+
+}
+
+1-swap.c/       0           0     0     644     222       `
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * swap_int - Nothing
+ * @a: Nothing
+ * @b: Nothing
+ *
+ * Return: Nothing
+ */
+
+void swap_int(int *a, int *b)
+{
+
+int outputA = *a;
+int outputB = *b;
+
+*a = outputB;
+*b = outputA;
+
+}
+10-add.c/       0           0     0     644     366       `
+#include "main.h"
+
+/**
+ * add - This is the main function, FUCK BETTY!!!!!!!!
+ *@firstNumber: THE ONE THING I TRULY HATE IN THIS WORLD IS BETTY!!!!
+ *@secondNumber: THE ONE THING I TRULY HATE IN THIS WORLD IS BETTY!!!!
+ *
+ * Return: This is bullshit
+ */
+int add(int firstNumber, int secondNumber)
+{
+
+int addition = firstNumber + secondNumber;
+
+return (addition);
+
+}
+/71             0           0     0     644     568       `
+#include "main.h"
+
+/**
+ * print_triangle - This is the main function, FUCK BETTY!!!!!!!!
+ * @size: Fuck this shit
+ *
+ * Return: This is bullshit
+ */
+void print_triangle(int size)
+{
+if (size > 0)
+{
+int counter = 0, spaces = size - 1, spacesCounter, hashtagsCounter;
+int hashtags = 1;
+while (counter < size)
+{
+spacesCounter = 0;
+while (spacesCounter < spaces)
+{
+_putchar(' ');
+spacesCounter++;
+}
+hashtagsCounter = 0;
+while (hashtagsCounter < hashtags)
+{
+_putchar('#');
+hashtagsCounter++;
+}
+_putchar('\n');
+spaces--;
+hashtags++;
+counter++;
+}
+}
+else
+{
+_putchar('\n');
+}
+}
+100-atoi.c/     0           0     0     644     43        `
+#include "main.h"
+
+int _atoi(char *s)
+{
+
+}
+
+/92             0           0     0     644     1061      `
+#include <stdio.h>
+#include <stdbool.h>
+/* more headers goes there */
+
+/**
+ * main - This is the main function, FUCK BETTY!!!!!!!!
+ *
+ * Return: This is bullshit
+ */
+int main(void)
+{
+
+    int number = 1;
+
+    int pos1;
+    int pos2;
+
+    int comb2;
+
+    int remainder;
+    int j;
+
+    int i = 0;
+    while (i < 100) {
+
+        if (number > 9){
+
+            pos1 = number/10;
+            pos2 = number%10;
+
+            comb2 = 0;
+
+            j = number;
+
+            while (j != 0) {
+                remainder = j % 10;
+                comb2 = comb2 * 10 + remainder;
+                j /= 10;
+            }
+
+            if (pos2 != 0 && comb2 > number) {
+                putchar(pos1 + '0');
+                putchar(pos2 + '0');
+                if (number != 89){
+                    putchar(',');
+                    putchar(' ');
+                }
+            }
+
+        }else{
+            putchar('0');
+            putchar(number + '0');
+            putchar(',');
+            putchar(' ');
+        }
+
+        number++;
+        i++;
+
+    }
+
+    return (0);
+}
+
+/111            0           0     0     644     233       `
+#include "main.h"
+
+/**
+ * set_string - The devil's gonna make me a free man
+ * @s: The devil's gonna set me free
+ * @to: No time to die
+ *
+ * Return: Fool me once fool me twice
+ */
+
+void set_string(char **s, char *to)
+{
+
+*s = to;
+
+}
+
+/129            0           0     0     644     349       `
+#include "main.h"
+
+/**
+ * largest_number - returns the largest of 3 numbers
+ * @a: first integer
+ * @b: second integer
+ * @c: third integer
+ * Return: largest number
+ */
+
+int largest_number(int a, int b, int c)
+{
+int largest;
+
+if (a > b && a > c)
+{
+largest = a;
+}
+else if (b > a && b > c)
+{
+largest = b;
+}
+else
+{
+largest = c;
+}
+
+return (largest);
+}
+
+2-main.c/       0           0     0     644     332       `
+#include <stdio.h>
+#include "main.h"
+
+/**
+* main - prints the largest of 3 integers
+* Return: 0
+*/
+
+int main(void)
+{
+        int a, b, c;
+        int largest;
+
+        a = 972;
+        b = -98;
+        c = 0;
+
+        largest = largest_number(a, b, c);
+
+        printf("%d is the largest number\n", largest);
+
+        return (0);
+}
+2-mul.c/        0           0     0     644     284       `
+#include "main.h"
+
+/**
+ * mul - This is the main function, FUCK BETTY!!!!!!!!
+ *@a: THE ONE THING I TRULY HATE IN THIS WORLD IS BETTY!!!!
+ *@b: This sucks
+ *
+ * Return: This is bullshit
+ */
+int mul(int a, int b)
+{
+
+int multiplicationResult = a * b;
+
+return (multiplicationResult);
+
+}
+/149            0           0     0     644     298       `
+#include <stdio.h>
+/* more headers goes there */
+
+/**
+ * main - This is the main function, FUCK BETTY!!!!!!!!
+ *
+ * Return: This is bullshit
+ */
+int main(void)
+{
+
+char *alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+int i = 0;
+while (i < 26)
+{
+putchar(alphabet[i]);
+i++;
+}
+putchar('\n');
+
+return (0);
+}
+/169            0           0     0     644     316       `
+#include "main.h"
+
+/**
+ * print_alphabet_x10 - This is the main function, FUCK BETTY!!!!!!!!
+ *
+ * Return: This is bullshit
+ */
+void print_alphabet_x10(void)
+{
+
+char *output = "abcdefghijklmnopqrstuvwxyz";
+int n = 0;
+while (n < 10)
+{
+int i = 0;
+while (i < 26)
+{
+_putchar(output[i]);
+i++;
+}
+_putchar('\n');
+n++;
+}
+
+}
+2-strchr.c/     0           0     0     644     182       `
+#include "main.h"
+#include <string.h>
+
+/**
+ * _strchr - Amenadiel
+ * @s: Uriel
+ * @c: Ethaniel
+ *
+ * Return: Semaiel
+ */
+
+char *_strchr(char *s, char c)
+{
+
+return (strchr(s, c));
+
+}
+2-strlen.c/     0           0     0     644     193       `
+#include "main.h"
+#include <string.h>
+
+/**
+ * _strlen - Nothing
+ * @s: Nothing
+ *
+ * Return: Nothing
+ */
+
+int _strlen(char *s)
+{
+
+int outputLength = (int) strlen(s);
+
+return (outputLength);
+
+}
+
+/193            0           0     0     644     230       `
+#include "main.h"
+#include <string.h>
+
+/**
+ * _strlen_recursion - Place the semen
+ * @s: Meaningless
+ *
+ * Return: Nothing at all
+ */
+
+int _strlen_recursion(char *s)
+{
+
+int inputLength = (int) strlen(s);
+
+return (inputLength);
+
+}
+2-strncpy.c/    0           0     0     644     362       `
+#include "main.h"
+#include <string.h>
+
+/**
+ * _strncpy - These are not the droids your looking for
+ * @dest: These are not the droids we're looking for
+ * @src: Move along
+ * @n: Move along, Move along
+ *
+ * Return: THIS. IS. SPARTA!!!!!!!
+ */
+
+char *_strncpy(char *dest, char *src, int n)
+{
+
+char *returnValue = strncpy(dest, src, n);
+
+return (returnValue);
+
+}
+3-factorial.c/  0           0     0     644     241       `
+#include "main.h"
+
+/**
+ * factorial - FAC. FUCKING. TORIALS.
+ * @n: Tibeb
+ *
+ * Return: I wanna go to thaaaaaiiiilandddd
+ */
+
+int factorial(int n)
+{
+
+if (n < 0)
+{
+return (-1);
+}
+if (n == 0)
+{
+return (1);
+}
+
+return (n * factorial(n - 1));
+
+}
+
+3-islower.c/    0           0     0     644     305       `
+#include <ctype.h>
+#include "main.h"
+
+/**
+ * _islower - This is the main function, FUCK BETTY!!!!!!!!
+ *@c: THE ONE THING I TRULY HATE IN THIS WORLD IS BETTY!!!!
+ *
+ * Return: This is bullshit
+ */
+int _islower(int c)
+{
+
+int checker = islower(c);
+
+if (checker == 0)
+{
+return (0);
+}
+else
+{
+return (1);
+}
+
+}
+
+/215            0           0     0     644     451       `
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
+/* more headers goes there */
+
+/**
+ * main - This is the main function, FUCK BETTY!!!!!!!!
+ *
+ * Return: This is bullshit
+ */
+int main(void)
+{
+
+char *alphabet = "abcdefghijklmnopqrstuvwxyz";
+char *capsAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+int i = 0;
+int d = 0;
+
+while (i < 26)
+{
+putchar(alphabet[i]);
+i++;
+}
+
+while (d < 26)
+{
+putchar(capsAlphabet[d]);
+d++;
+}
+
+putchar('\n');
+
+return (0);
+}
+
+/236            0           0     0     644     250       `
+#include "main.h"
+
+/**
+ * print_numbers - This is the main function, FUCK BETTY!!!!!!!!
+ *
+ * Return: This is bullshit
+ */
+void print_numbers(void)
+{
+
+int counter = 0;
+
+while (counter <= 9)
+{
+_putchar(counter + '0');
+counter++;
+}
+
+_putchar('\n');
+
+}
+/255            0           0     0     644     648       `
+#include <stdio.h>
+#include "main.h"
+
+/**
+* print_remaining_days - takes a date and prints how many days are
+* left in the year, taking leap years into account
+* @month: month in number format
+* @day: day of month
+* @year: year
+* Return: void
+*/
+
+void print_remaining_days(int month, int day, int year)
+{
+if (year % 4 == 0)
+{
+if (month >= 2 && day >= 60)
+{
+day++;
+}
+printf("Day of the year: %d\n", day);
+printf("Remaining days: %d\n", 366 - day);
+}
+else
+{
+if (month == 2 && day == 60)
+{
+printf("Invalid date: %02d/%02d/%04d\n", month, day - 31, year);
+}
+else
+{
+printf("Day of the year: %d\n", day);
+printf("Remaining days: %d\n", 365 - day);
+}
+}
+}
+3-puts.c/       0           0     0     644     148       `
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * _puts - Nothing
+ * @str: Nothing
+ *
+ * Return: No Refunds!
+ */
+
+void _puts(char *str)
+{
+
+puts(str);
+
+}
+3-strcmp.c/     0           0     0     644     308       `
+#include "main.h"
+#include <string.h>
+
+/**
+ * _strcmp - Luke, I am your father
+ * @s1: THAT'S IMPOSSIBLE!!!!!
+ * @s2: Search your feelings Luke, you will know it to be true
+ *
+ * Return: BEENNN!!! Why BEN!!!
+ */
+
+int _strcmp(char *s1, char *s2)
+{
+
+int returnValue = strcmp(s1, s2);
+
+return (returnValue);
+
+}
+3-strspn.c/     0           0     0     644     252       `
+#include "main.h"
+#include <string.h>
+
+/**
+ * _strspn - Star spangled
+ * @s: banner
+ * @accept: yet wave
+ *
+ * Return: Or the land of the free and the home of the brave
+ */
+
+unsigned int _strspn(char *s, char *accept)
+{
+
+return (strspn(s, accept));
+
+}
+4-isalpha.c/    0           0     0     644     305       `
+#include <ctype.h>
+#include "main.h"
+
+/**
+ * _isalpha - This is the main function, FUCK BETTY!!!!!!!!
+ *@c: THE ONE THING I TRULY HATE IN THIS WORLD IS BETTY!!!!
+ *
+ * Return: This is bullshit
+ */
+int _isalpha(int c)
+{
+
+int checker = isalpha(c);
+
+if (checker == 0)
+{
+return (0);
+}
+else
+{
+return (1);
+}
+
+}
+
+/281            0           0     0     644     331       `
+#include "main.h"
+
+/**
+ * _pow_recursion - Pew di PIE
+ * @x: Alla fiera dell'est
+ * @y: Per due soldi
+ *
+ * Return: Mi son comprato un.... non ricordo il resto...
+ */
+
+int _pow_recursion(int x, int y)
+{
+
+if (y < 0)
+{
+return (-1);
+}
+if (y == 0)
+{
+return (1);
+}
+if (y == 1)
+{
+return (x);
+}
+
+return (_pow_recursion(x, y - 1) * x);
+
+}
+
+/300            0           0     0     644     345       `
+#include <stdio.h>
+/* more headers goes there */
+
+/**
+ * main - This is the main function, FUCK BETTY!!!!!!!!
+ *
+ * Return: This is bullshit
+ */
+int main(void)
+{
+
+char *alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+int i = 0;
+while (i < 26)
+{
+if (alphabet[i] != 'q' && alphabet[i] != 'e')
+putchar(alphabet[i]);
+i++;
+}
+
+putchar('\n');
+
+return (0);
+}
+
+/319            0           0     0     644     300       `
+#include "main.h"
+
+/**
+ * print_most_numbers - This is the main function, FUCK BETTY!!!!!!!!
+ *
+ * Return: This is bullshit
+ */
+void print_most_numbers(void)
+{
+
+int counter = 0;
+
+while (counter <= 9)
+{
+
+if (counter != 2 && counter != 4)
+{
+_putchar(counter + '0');
+}
+
+counter++;
+}
+
+_putchar('\n');
+
+}
+4-print_rev.c/  0           0     0     644     412       `
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+
+/**
+ * print_rev - Null pointer exception
+ * @s: Understand the secrets of 369 you will have the keys to the universe
+ *
+ * Return: The forgotten Genius
+ */
+
+void print_rev(const char *s)
+{
+
+int inputLength = (int) strlen(s) - 1;
+char letter;
+
+while (inputLength >= 0)
+{
+
+letter = s[inputLength];
+printf("%c", letter);
+inputLength--;
+
+}
+printf("\n");
+
+}
+4-rev_array.c/  0           0     0     644     548       `
+#include "main.h"
+
+/**
+ * reverse_array - This function reverses an array... NOOO SHIIIT
+ * @a: Did you bring the cavalry?
+ * @n: Woman. I AM the cavalry.
+ *
+ * Return: Familia
+ */
+
+void reverse_array(int *a, int n)
+{
+
+int reversedString[900] = {0};
+int indexCounter = 0;
+int reversedIndexCounter = n - 1;
+
+while (indexCounter < n)
+{
+reversedString[indexCounter] = a[reversedIndexCounter];
+indexCounter++;
+reversedIndexCounter--;
+}
+
+indexCounter = 0;
+
+while (indexCounter < n)
+{
+a[indexCounter] = reversedString[indexCounter];
+indexCounter++;
+}
+
+}
+4-strpbrk.c/    0           0     0     644     305       `
+#include "main.h"
+#include <string.h>
+
+/**
+ * _strpbrk - This...
+ * @s: This is treason
+ * @accept: I hadn't realized it was treason to defend your people
+ *
+ * Return: You've been corrupted... You are no longer the man I knew
+ */
+
+char *_strpbrk(char *s, char *accept)
+{
+
+return (strpbrk(s, accept));
+
+}
+
+/343            0           0     0     644     469       `
+#include "main.h"
+
+/**
+ * more_numbers - This is the main function, FUCK BETTY!!!!!!!!
+ *
+ * Return: This is bullshit
+ */
+void more_numbers(void)
+{
+
+int timesCounter = 0;
+int firstDigit;
+
+while (timesCounter < 10)
+{
+int counter = 0;
+
+while (counter <= 14)
+{
+
+firstDigit = counter;
+
+if (counter >= 10)
+{
+firstDigit = counter / 10;
+}
+
+_putchar(firstDigit + '0');
+
+if (counter >= 10)
+{
+_putchar((counter % 10) + '0');
+}
+
+counter++;
+}
+
+_putchar('\n');
+timesCounter++;
+}
+
+}
+
+/361            0           0     0     644     293       `
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
+/* more headers goes there */
+
+/**
+ * main - This is the main function, FUCK BETTY!!!!!!!!
+ *
+ * Return: This is bullshit
+ */
+int main(void)
+{
+
+int num = 0;
+
+while (num < 10)
+{
+printf("%d", num);
+num++;
+}
+
+putchar('\n');
+
+return (0);
+}
+
+5-rev_string.c/ 0           0     0     644     632       `
+#include "main.h"
+#include <string.h>
+
+/**
+ * rev_string - Reverses a string.... TFFF did I just do it right???
+ * @s: This shit.... aaaand we're back to normal... phew
+ *
+ * Return: This language is outdated... just saying..
+ */
+
+void rev_string(char *s)
+{
+int inputLength = (int) strlen(s);
+char copy[900];
+int reverseCounter = 0;
+char letter;
+int secondCounter = inputLength - 1;
+
+int firstCounter = 0;
+while (firstCounter < inputLength)
+{
+
+copy[firstCounter] = s[firstCounter];
+firstCounter++;
+
+}
+
+while (secondCounter >= 0)
+{
+
+letter = copy[secondCounter];
+s[reverseCounter] = letter;
+secondCounter--;
+reverseCounter++;
+
+}
+
+
+}
+5-sign.c/       0           0     0     644     334       `
+#include "main.h"
+
+/**
+ * print_sign - This is the main function, FUCK BETTY!!!!!!!!
+ *@n: THE ONE THING I TRULY HATE IN THIS WORLD IS BETTY!!!!
+ *
+ * Return: This is bullshit
+ */
+int print_sign(int n)
+{
+
+if (n > 0)
+{
+_putchar('+');
+return (1);
+}
+else if (n < 0)
+{
+_putchar('-');
+return (-1);
+}
+else
+{
+_putchar('0');
+return (0);
+}
+
+}
+/380            0           0     0     644     515       `
+#include "main.h"
+
+int squareLoop(int iNumber, int iCheck);
+
+/**
+ * _sqrt_recursion - Kisab z'koneley
+ * @n: Kisab z'semreley
+ *
+ * Return: Wikyanos'yu akley
+ */
+
+int _sqrt_recursion(int n)
+{
+
+return (squareLoop(n, 0));
+
+}
+
+/**
+ * squareLoop - Fishikta Ameley
+ * @iNumber: Y't'am
+ * @iCheck: Y'hsem
+ *
+ * Return: Fishikta Ameley
+ */
+
+int squareLoop(int iNumber, int iCheck)
+{
+if (iCheck * iCheck == iNumber)
+{
+return (iCheck);
+}
+if (iCheck >= iNumber)
+{
+return (-1);
+}
+
+return (squareLoop(iNumber, iCheck + 1));
+
+}
+
+/400            0           0     0     644     654       `
+#include "main.h"
+#include <ctype.h>
+#include <string.h>
+
+/**
+ * string_toupper - We need a plan of attack
+ * @iString: I have a plan, Attack
+ *
+ * Return: There's only one God ma'am,
+ * and I'm pretty sure he doesn't dress like that
+ */
+
+char *string_toupper(char *iString)
+{
+
+char upperString[900];
+int indexCounter = 0;
+long int inputLength = (long int) strlen(iString);
+char *upperPointer;
+char tempChar;
+
+while (indexCounter < inputLength)
+{
+tempChar = iString[indexCounter];
+tempChar = toupper(tempChar);
+upperString[indexCounter] = tempChar;
+indexCounter++;
+}
+
+upperPointer = strncpy(iString, upperString, inputLength);
+
+return (upperPointer);
+
+}
+5-strstr.c/     0           0     0     644     239       `
+#include "main.h"
+#include "string.h"
+
+/**
+ * _strstr - String String
+ * @haystack: Bajaj
+ * @needle: Tagrow
+ *
+ * Return: Indian Scout Bobber Sixty
+ */
+
+char *_strstr(char *haystack, char *needle)
+{
+
+return (strstr(haystack, needle));
+
+}
+
+6-abs.c/        0           0     0     644     345       `
+#include <math.h>
+#include "main.h"
+
+/**
+ * _abs - This is the main function, FUCK BETTY!!!!!!!!
+ *@iNumber: THE ONE THING I TRULY HATE IN THIS WORLD IS BETTY!!!!
+ *
+ * Return: This is bullshit
+ */
+int _abs(int iNumber)
+{
+
+double dNumber = (double) iNumber;
+
+double rawResult = fabs(dNumber);
+
+int result = (int) rawResult;
+
+return (result);
+
+}
+
+6-cap_string.c/ 0           0     0     644     1373      `
+#include "main.h"
+#include <ctype.h>
+#include <string.h>
+
+int checkChar(char inputChar);
+
+/**
+ * cap_string - I am...
+ * @inputString: ... Inevitable
+ *
+ * Return: And I... Am... IRONMAN
+ */
+
+char *cap_string(char *inputString)
+{
+
+char capitalizedString[900];
+char *capitalizedPointer;
+long int inputLength = (long int) strlen(inputString);
+int indexCounter = 0;
+int capitalized = 0;
+char tempChar;
+
+while (indexCounter < inputLength)
+{
+
+tempChar = inputString[indexCounter];
+
+if (checkChar(tempChar) == 0)
+{
+capitalized = 0;
+}
+else if (capitalized == 0)
+{
+tempChar = toupper(tempChar);
+capitalized = 1;
+}
+
+capitalizedString[indexCounter] = tempChar;
+indexCounter++;
+
+}
+
+capitalizedPointer = strncpy(inputString, capitalizedString, inputLength);
+
+return (capitalizedPointer);
+
+}
+
+/**
+ * checkChar - I am...
+ * @inputChar: ... Inevitable
+ *
+ * Return: And I... Am... IRONMAN
+ */
+
+int checkChar(char inputChar)
+{
+
+if (inputChar == ' ')
+return (0);
+if (inputChar == '\t')
+return (0);
+if (inputChar == '\n')
+return (0);
+if (inputChar == ',')
+return (0);
+if (inputChar == ';')
+return (0);
+if (inputChar == '.')
+return (0);
+if (inputChar == '!')
+return (0);
+if (inputChar == '?')
+return (0);
+if (inputChar == '\"')
+return (0);
+if (inputChar == '(')
+return (0);
+if (inputChar == ')')
+return (0);
+if (inputChar == '{')
+return (0);
+if (inputChar == '}')
+return (0);
+
+return (1);
+
+}
+
+/420            0           0     0     644     605       `
+#include "main.h"
+
+int checkPrime(int iNumber, int iChecker);
+
+/**
+ * is_prime_number - Zhaskuwo hize
+ * @n: kemesgin'ye
+ *
+ * Return: Akli zelewo'yu lebam
+ */
+
+int is_prime_number(int n)
+{
+
+return (checkPrime(n, 2));
+
+}
+
+/**
+ * checkPrime - Babababababbam
+ * @iNumber: barararararam
+ * @iChecker: I tried so hard, and got so far
+ *
+ * Return: dulululu lul ulu ludu udu
+ */
+
+int checkPrime(int iNumber, int iChecker)
+{
+
+if (iNumber == 1 || iNumber < 0)
+{
+return (0);
+}
+
+if (iChecker >= iNumber)
+{
+return (1);
+}
+
+if (iNumber % iChecker == 0)
+{
+return (0);
+}
+
+return (checkPrime(iNumber, iChecker + 1));
+
+}
+
+6-print_line.c/ 0           0     0     644     254       `
+#include "main.h"
+
+/**
+ * print_line - This is the main function, FUCK BETTY!!!!!!!!
+ * @c: Fuck this shit
+ *
+ * Return: This is bullshit
+ */
+void print_line(int c)
+{
+
+int counter = 0;
+while (counter < c)
+{
+_putchar('_');
+counter++;
+}
+_putchar('\n');
+
+}
+/441            0           0     0     644     256       `
+#include <stdio.h>
+/* more headers goes there */
+
+/**
+ * main - This is the main function, FUCK BETTY!!!!!!!!
+ *
+ * Return: This is bullshit
+ */
+int main(void)
+{
+
+int num = 0;
+
+while (num < 10)
+{
+putchar(num + '0');
+num++;
+}
+
+putchar('\n');
+
+return (0);
+}
+6-puts2.c/      0           0     0     644     426       `
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+
+/**
+ * puts2 - I officially HATE C
+ * @str: This language is so old Jesus used it
+ *
+ * Return: No wonder he couldn't fix the buoyancy bug
+ */
+
+void puts2(char *str)
+{
+
+int inputLength = (int) strlen(str);
+int indexCounter = 0;
+
+while (indexCounter < inputLength)
+{
+
+if (indexCounter % 2 == 0)
+{
+printf("%c", str[indexCounter]);
+}
+
+indexCounter++;
+}
+
+printf("\n");
+
+}
+7-leet.c/       0           0     0     644     1436      `
+#include "main.h"
+#include <ctype.h>
+#include <string.h>
+
+char evaluateChar(char defaultValue);
+
+/**
+ * leet - This is the leet functions, LEEEEEEEET
+ * @inputString: Music & Lights, I sing and dance to you all night
+ *
+ * Return: Oh and... FUCK BEETTTYYYY
+ */
+
+char *leet(char *inputString)
+{
+
+char leetString[900];
+char *leetPointer;
+
+long int inputLength = (long int) strlen(inputString);
+int inputIndex = 0;
+
+char evaluationChar;
+
+while (inputIndex < inputLength)
+{
+
+evaluationChar = inputString[inputIndex];
+
+leetString[inputIndex] = evaluateChar(evaluationChar);
+inputIndex++;
+
+}
+
+leetPointer = strncpy(inputString, leetString, inputLength);
+
+return (leetPointer);
+
+}
+
+/**
+ * evaluateChar - This is a ridiculous style of code
+ * @defaultValue: Absolutely DIRTYYYY
+ *
+ * Return: FUCK BEETTTYYYY
+ */
+
+char evaluateChar(char defaultValue)
+{
+
+char finishedValue = defaultValue;
+
+char replacementChars[] = {'a', 'e', 'o', 't', 'l'};
+char replacingNumbers[] = {'4', '3', '0', '7', '1'};
+
+int replacementLength = 5;
+int replacementIndex = 0;
+
+char replacementChar;
+char capReplacementChar;
+
+while (replacementIndex < replacementLength)
+{
+
+replacementChar = replacementChars[replacementIndex];
+capReplacementChar = (char) toupper(replacementChar);
+
+if ((defaultValue == replacementChar) ||
+(defaultValue == capReplacementChar))
+{
+
+finishedValue = replacingNumbers[replacementIndex];
+
+}
+
+replacementIndex++;
+
+}
+
+return (finishedValue);
+
+}
+/460            0           0     0     644     536       `
+#include "main.h"
+
+/**
+ * print_chessboard - AfriHerbal
+ * @a: Supremacist piece of shit
+ *
+ * Return: Your insecurities are so blatantly obvious
+ */
+
+void print_chessboard(char (*a)[8])
+{
+
+char currentChar;
+
+int firstSubscriptCounter = 0;
+int secondSubscriptCounter;
+
+while (firstSubscriptCounter < 8)
+{
+
+secondSubscriptCounter = 0;
+while (secondSubscriptCounter < 8)
+{
+
+currentChar = a[firstSubscriptCounter][secondSubscriptCounter];
+_putchar(currentChar);
+secondSubscriptCounter++;
+
+}
+
+_putchar('\n');
+firstSubscriptCounter++;
+
+}
+
+}
+/482            0           0     0     644     409       `
+#include "main.h"
+
+/**
+ * print_diagonal - This is the main function, FUCK BETTY!!!!!!!!
+ * @c: Fuck this shit
+ *
+ * Return: This is bullshit
+ */
+void print_diagonal(int c)
+{
+
+int counter = 0;
+int spaceCounter;
+
+if (c > 0)
+{
+while (counter < c)
+{
+
+spaceCounter = 0;
+while (spaceCounter < counter)
+{
+_putchar(' ');
+spaceCounter++;
+}
+_putchar('\\');
+
+_putchar('\n');
+counter++;
+}
+
+}
+else
+{
+_putchar('\n');
+}
+
+}
+
+/502            0           0     0     644     427       `
+#include "main.h"
+#include <math.h>
+
+/**
+ * print_last_digit - This is the main function, FUCK BETTY!!!!!!!!
+ *@n: THE ONE THING I TRULY HATE IN THIS WORLD IS BETTY!!!!
+ *
+ * Return: This is bullshit
+ */
+int print_last_digit(int n)
+{
+int lastDigit = n % 10;
+
+if (lastDigit == -4)
+{
+_putchar('4');
+return (4);
+}
+else if (lastDigit == -8)
+{
+_putchar('8');
+return (8);
+}
+else
+{
+_putchar('0' + lastDigit);
+return (lastDigit);
+}
+
+}
+
+/524            0           0     0     644     300       `
+#include <stdio.h>
+/* more headers goes there */
+
+/**
+ * main - This is the main function, FUCK BETTY!!!!!!!!
+ *
+ * Return: This is bullshit
+ */
+int main(void)
+{
+
+char *alphabet = "zyxwvutsrqponmlkjihgfedcba";
+
+int i = 0;
+
+while (i < 26)
+{
+putchar(alphabet[i]);
+i++;
+}
+
+putchar('\n');
+
+return (0);
+}
+7-puts_half.c/  0           0     0     644     558       `
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+
+/**
+ * puts_half - What do you call a nigga on a tree with a briefcase
+ * @str: Branch Manager. LMAOOOOO
+ *
+ * Return: I plead 1st
+ */
+
+void puts_half(char *str)
+{
+
+long int inputLength = (long int) strlen(str);
+
+long int indexCounter = (long int) inputLength / 2;
+if (inputLength % 2 != 0)
+{
+indexCounter = (inputLength - 1) / 2;
+}
+if (inputLength > 224)
+{
+indexCounter = indexCounter + 1;
+}
+
+while (indexCounter < inputLength)
+{
+printf("%c", str[indexCounter]);
+indexCounter++;
+}
+
+printf("\n");
+
+}
+8-24_hours.c/   0           0     0     644     1068      `
+#include <stdbool.h>
+#include "main.h"
+
+/**
+ * jack_bauer - This is the main function, FUCK BETTY!!!!!!!!
+ *
+ * Return: This is bullshit!
+ */
+void jack_bauer(void)
+{
+
+int firstDigitHour;
+int secondDigitHour;
+int firstDigitMinute;
+int secondDigitMinute;
+
+bool totalHour = true;
+bool totalMinute = true;
+
+while (totalHour)
+{
+
+firstDigitHour = 0;
+
+while (firstDigitHour < 10)
+{
+
+secondDigitHour = 0;
+
+while (secondDigitHour < 10)
+{
+
+if (firstDigitHour == 2 && secondDigitHour == 4)
+{
+firstDigitHour = 10;
+totalHour = false;
+break;
+}
+
+while (totalMinute)
+{
+
+firstDigitMinute = 0;
+
+while (firstDigitMinute < 10)
+{
+
+secondDigitMinute = 0;
+
+while (secondDigitMinute < 10)
+{
+
+if (firstDigitMinute == 6 && secondDigitMinute == 0)
+{
+firstDigitMinute = 10;
+totalMinute = false;
+break;
+}
+
+_putchar('0' + firstDigitHour);
+_putchar('0' + secondDigitHour);
+
+_putchar(':');
+
+_putchar('0' + firstDigitMinute);
+_putchar('0' + secondDigitMinute);
+
+_putchar('\n');
+
+secondDigitMinute++;
+
+}
+
+firstDigitMinute++;
+
+}
+
+}
+
+totalMinute = true;
+secondDigitHour++;
+
+}
+
+firstDigitHour++;
+
+}
+
+}
+
+}
+8-print_array.c/0           0     0     644     455       `
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * print_array - I wanna da pizzad
+ * @a: If I don't geta da pizza....
+ * @n: ammana loooze it
+ *
+ * Return: in case you didn't notice.... IT'S A VOID!!!!
+ */
+
+void print_array(int *a, int n)
+{
+
+int indexCounter = 0;
+int printNumber;
+
+while (indexCounter < n)
+{
+
+printNumber = a[indexCounter];
+printf("%d", printNumber);
+indexCounter++;
+
+if (indexCounter < n)
+{
+putchar(',');
+putchar(' ');
+}
+
+}
+
+printf("\n");
+
+}
+
+/544            0           0     0     644     290       `
+#include <stdio.h>
+/* more headers goes there */
+
+/**
+ * main - This is the main function, FUCK BETTY!!!!!!!!
+ *
+ * Return: This is bullshit
+ */
+int main(void)
+{
+
+char *alphabet = "0123456789abcdef";
+
+int i = 0;
+
+while (i < 16)
+{
+putchar(alphabet[i]);
+i++;
+}
+
+putchar('\n');
+
+return (0);
+}
+/562            0           0     0     644     1464      `
+#include "main.h"
+#include <stdio.h>
+
+int forwardCounter(const int *iArray, int iArraySize);
+int reverseCounter(const int *iArray, int iArraySize);
+
+/**
+ * print_diagsums - We don't believe you
+ * @a: Cuz we the people
+ * @size: All you black folks you must go
+ *
+ * Return: All you mexicans you must go
+ */
+
+void print_diagsums(int *a, int size)
+{
+
+printf("%d, %d\n", forwardCounter(a, size), reverseCounter(a, size));
+
+}
+
+/**
+ * forwardCounter - We don't believe you
+ * @iArray: Cuz we the people
+ * @iArraySize: All you black folks you must go
+ *
+ * Return: All you mexicans you must go
+ */
+
+int forwardCounter(const int *iArray, int iArraySize)
+{
+
+int currentInt;
+
+int indexCounter = 0;
+int incrementalCounter = 0;
+int sumCounter = 0;
+
+while (indexCounter < iArraySize)
+{
+
+currentInt = iArray[incrementalCounter];
+sumCounter = sumCounter + currentInt;
+incrementalCounter += iArraySize + 1;
+indexCounter++;
+
+}
+
+return (sumCounter);
+}
+
+/**
+ * reverseCounter - We don't believe you
+ * @iArray: Cuz we the people
+ * @iArraySize: All you black folks you must go
+ *
+ * Return: All you mexicans you must go
+ */
+
+int reverseCounter(const int *iArray, int iArraySize)
+{
+
+int currentInt;
+
+int indexCounter = 0;
+int incrementalCounter = iArraySize - 1;
+int sumCounter = 0;
+
+while (indexCounter < iArraySize)
+{
+
+currentInt = iArray[incrementalCounter];
+sumCounter = sumCounter + currentInt;
+incrementalCounter += iArraySize - 1;
+indexCounter++;
+
+}
+
+return (sumCounter);
+}
+/582            0           0     0     644     429       `
+#include "main.h"
+
+/**
+ * print_square - This is the main function, FUCK BETTY!!!!!!!!
+ * @size: Fuck this shit
+ *
+ * Return: This is bullshit
+ */
+void print_square(int size)
+{
+
+if (size > 0)
+{
+int heightCounter;
+int widthCounter;
+
+heightCounter = 0;
+while (heightCounter < size)
+{
+widthCounter = 0;
+while (widthCounter < size)
+{
+_putchar('#');
+widthCounter++;
+}
+_putchar('\n');
+heightCounter++;
+}
+
+}
+else
+{
+_putchar('\n');
+}
+
+}
+
+9-fizz_buzz.c/  0           0     0     644     392       `
+#include <stdio.h>
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+
+int counter = 1;
+
+while (counter <= 100)
+{
+if ((counter % 3) == 0 || (counter % 5) == 0)
+{
+if ((counter % 3) == 0)
+{
+printf("Fizz");
+}
+if ((counter % 5) == 0)
+{
+printf("Buzz");
+}
+}
+else
+{
+printf("%d", counter);
+}
+
+if (counter < 100)
+{
+putchar(' ');
+}
+
+counter++;
+
+}
+
+putchar('\n');
+
+return (0);
+}
+9-print_comb.c/ 0           0     0     644     305       `
+#include <stdio.h>
+/* more headers goes there */
+
+/**
+ * main - This is the main function, FUCK BETTY!!!!!!!!
+ *
+ * Return: This is bullshit
+ */
+int main(void)
+{
+
+int num = 0;
+
+while (num < 10)
+{
+putchar(num + '0');
+
+if (num != 9)
+{
+putchar(',');
+putchar(' ');
+}
+
+num++;
+
+}
+
+putchar('\n');
+
+return (0);
+}
+
+9-strcpy.c/     0           0     0     644     305       `
+#include "main.h"
+#include <string.h>
+
+/**
+ * _strcpy - I'm so fucking hungry rn
+ * @dest: I'm contemplating eating my own hand
+ * @src: Left or Right?
+ *
+ * Return: Yep, I'm certifiably insane.
+ */
+
+char *_strcpy(char *dest, char *src)
+{
+
+char *returnValue = strcpy(dest, src);
+
+return (returnValue);
+
+}
+
+convert_day.c/  0           0     0     644     1021      `
+#include "main.h"
+
+/**
+* convert_day - converts day of month to day of year, without accounting
+* for leap year
+* @month: month in number format
+* @day: day of month
+* Return: day of year
+*/
+
+int convert_day(int month, int day)
+{
+    switch (month)
+    {
+        case 2:
+            day = 31 + day;
+            break;
+        case 3:
+            day = 59 + day;
+            break;
+        case 4:
+            day = 90 + day;
+            break;
+        case 5:
+            day = 120 + day;
+            break;
+        case 6:
+            day = 151 + day;
+            break;
+        case 7:
+            day = 181 + day;
+            break;
+        case 8:
+            day = 212 + day;
+            break;
+        case 9:
+            day = 243 + day;
+            break;
+        case 10:
+            day = 273 + day;
+            break;
+        case 11:
+            day = 304 + day;
+            break;
+        case 12:
+            day = 334 + day;
+            break;
+        default:
+            break;
+    }
+    return (day);
+}
+
+main.c/         0           0     0     644     148       `
+#include "main.h"
+
+int main(void)
+{
+    _puts("\"At the end of the day, my goal was to be the best hacker\"\n\t- Kevin Mitnick");
+    return (0);
+}
