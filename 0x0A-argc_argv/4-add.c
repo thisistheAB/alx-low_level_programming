@@ -13,6 +13,7 @@
 
 int main(int argc, char *argv[])
 {
+char currentChar;
 int currentInt;
 int digitCheck;
 int additionResult = 0;
@@ -22,7 +23,8 @@ if (argc > 1)
 {
 while (argIndex < argc)
 {
-digitCheck = isdigit((int) argv[argIndex]);
+currentChar = (char) argv[argIndex];
+digitCheck = isdigit(currentChar);
 if (digitCheck != 0)
 {
 currentInt = atoi(argv[argIndex]);
@@ -44,6 +46,10 @@ return (1);
 argIndex++;
 }
 printf("%d\n", additionResult);
-return (0);
 }
+else
+{
+printf("0");
+}
+return (0);
 }
