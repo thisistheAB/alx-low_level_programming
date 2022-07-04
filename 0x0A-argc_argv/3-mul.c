@@ -13,16 +13,17 @@
 int main(int argc, char *argv[])
 {
 
+int multiplicando = atoi(argv[1]);
+int multiplicatore = atoi(argv[2]);
+int result;
+
 if (argc < 3)
 {
 printf("Error\n");
 return(1);
 }
 
-int multiplicando = atoi(argv[1]);
-int multiplicatore = atoi(argv[2]);
-
-int result = multiplicando * multiplicatore;
+result = multiplicando * multiplicatore;
 
 printf("%d\n", result);
 
