@@ -26,7 +26,7 @@ return (1);
 multiplicando = atoi(argv[1]);
 multiplicatore = atoi(argv[2]);
 
-result = multiplicando * multiplicatore;
+result = multiplicando *multiplicatore;
 
 printf("%d\n", result);
 
