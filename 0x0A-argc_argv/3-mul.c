@@ -13,8 +13,8 @@
 int main(int argc, char *argv[])
 {
 
-int multiplicando = atoi(argv[1]);
-int multiplicatore = atoi(argv[2]);
+int multiplicando;
+int multiplicatore;
 int result;
 
 if (argc < 3)
@@ -22,6 +22,9 @@ if (argc < 3)
 printf("Error\n");
 return(1);
 }
+
+multiplicando = atoi(argv[1]);
+multiplicatore = atoi(argv[2]);
 
 result = multiplicando * multiplicatore;
 
