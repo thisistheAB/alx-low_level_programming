@@ -60,21 +60,16 @@ int containsChars(const char *iString)
     unsigned int inputIndex = 0;
     char currentChar;
 
-    printf("Input Length %d\n", inputLength);
-
     while (inputIndex < inputLength)
     {
 
         currentChar = iString[inputIndex];
-        printf("Char \'%c\' ", currentChar);
         if(isdigit(currentChar))
         {
-            printf("Is digit - Index %d\n", inputIndex);
             inputIndex++;
         }
         else
         {
-            printf("Not digit - Index %d\n", inputIndex);
             return (1);
         }
     }
