@@ -68,7 +68,7 @@ int containsChars(const char *iString)
         {
             inputIndex++;
         }
-        printf("Char %c ", currentChar);
+        printf("Char \'%c\' ", currentChar);
         if(isdigit(currentChar))
         {
             printf("Is digit - Index %d\n", inputIndex);
