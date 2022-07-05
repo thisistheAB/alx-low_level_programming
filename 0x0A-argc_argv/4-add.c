@@ -60,7 +60,7 @@ int containsChars(const char *iString)
     int inputIndex = 0;
     char currentChar;
 
-    while (inputIndex < inputLength)
+    while (inputIndex < inputLength - 1)
     {
 
         currentChar = iString[inputIndex];
