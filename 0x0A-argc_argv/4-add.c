@@ -64,15 +64,19 @@ int containsChars(const char *iString)
     {
 
         currentChar = iString[inputIndex];
-        printf("Current Char: %c - ", currentChar);
-        if(isalpha(currentChar) && inputIndex != inputLength - 2)
+        if(currentChar == 'S')
         {
-            printf("Not Alpha - Index:%d\n", inputIndex);
+            break;
+        }
+        printf("Current Char: %c - ", currentChar);
+        if(isalpha(currentChar))
+        {
+            printf("Is Alpha - Index:%d\n", inputIndex);
             return (1);
         }
         else
         {
-            printf("Is Alpha - Index:%d\n", inputIndex);
+            printf("Not Alpha - Index:%d\n", inputIndex);
             inputIndex++;
         }
 
