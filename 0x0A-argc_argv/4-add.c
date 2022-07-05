@@ -68,13 +68,13 @@ int containsChars(const char *iString)
         {
             break;
         }
-        if(isalpha(currentChar))
+        if(isdigit(currentChar))
         {
-            return (1);
+            inputIndex++;
         }
         else
         {
-            inputIndex++;
+            return (1);
         }
 
     }
