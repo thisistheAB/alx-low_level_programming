@@ -60,12 +60,12 @@ int containsChars(const char *iString)
     int inputIndex = 0;
     char currentChar;
 
-    while (inputIndex < inputLength - 1)
+    while (inputIndex < inputLength)
     {
 
         currentChar = iString[inputIndex];
         printf("Current Char: %c - ", currentChar);
-        if(isalpha(currentChar))
+        if(isalpha(currentChar) && inputIndex != inputLength - 1)
         {
             printf("Not Alpha!\n");
             return (1);
