@@ -64,10 +64,6 @@ int containsChars(const char *iString)
     {
 
         currentChar = iString[inputIndex];
-        if(currentChar == 'S' || currentChar == ' ')
-        {
-            inputIndex++;
-        }
         printf("Char \'%c\' ", currentChar);
         if(isdigit(currentChar))
         {
