@@ -65,7 +65,7 @@ while (inputIndex < inputLength)
 {
 
 currentChar = iString[inputIndex];
-if(isdigit(currentChar))
+if (isdigit(currentChar))
 {
 inputIndex++;
 }
