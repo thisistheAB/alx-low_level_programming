@@ -68,15 +68,18 @@ int containsChars(const char *iString)
         {
             break;
         }
+        printf("Char %c ", currentChar);
         if(isdigit(currentChar))
         {
+            printf("Is digit");
             inputIndex++;
         }
         else
         {
+            printf("Not digit");
             return (1);
         }
-
+        printf(" - Index %d", inputIndex);
     }
 
     return (0);
