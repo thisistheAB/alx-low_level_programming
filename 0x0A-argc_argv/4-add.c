@@ -1,5 +1,3 @@
-#pragma clang diagnostic push
-#pragma ide diagnostic ignored "cert-err34-c"
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
