@@ -71,15 +71,15 @@ int containsChars(const char *iString)
         printf("Char %c ", currentChar);
         if(isdigit(currentChar))
         {
-            printf("Is digit");
+            printf("Is digit - Index %d", inputIndex);
             inputIndex++;
         }
         else
         {
-            printf("Not digit");
+            printf("Not digit - Index %d", inputIndex);
             return (1);
         }
-        printf(" - Index %d", inputIndex);
+        printf("\n");
     }
 
     return (0);
