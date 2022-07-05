@@ -64,7 +64,7 @@ int containsChars(const char *iString)
     {
 
         currentChar = iString[inputIndex];
-        if(currentChar == 'S')
+        if(currentChar == 'S' || currentChar == ' ')
         {
             break;
         }
