@@ -57,7 +57,7 @@ int containsChars(const char *iString)
 {
 
     unsigned int inputLength = strlen(iString);
-    int inputIndex = 0;
+    unsigned int inputIndex = 0;
     char currentChar;
 
     printf("Input Length %d\n", inputLength);
