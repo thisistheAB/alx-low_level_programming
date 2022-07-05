@@ -1,3 +1,5 @@
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "cert-err34-c"
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
@@ -56,7 +58,7 @@ int main(int argc, char *argv[])
 int containsChars(const char *iString)
 {
 
-    int inputLength = sizeof(iString);
+    unsigned int inputLength = strlen(iString);
     int inputIndex = 0;
     char currentChar;
 
