@@ -66,20 +66,19 @@ int containsChars(const char *iString)
         currentChar = iString[inputIndex];
         if(currentChar == 'S' || currentChar == ' ')
         {
-            break;
+            inputIndex++;
         }
         printf("Char %c ", currentChar);
         if(isdigit(currentChar))
         {
-            printf("Is digit - Index %d", inputIndex);
+            printf("Is digit - Index %d\n", inputIndex);
             inputIndex++;
         }
         else
         {
-            printf("Not digit - Index %d", inputIndex);
+            printf("Not digit - Index %d\n", inputIndex);
             return (1);
         }
-        printf("\n");
     }
 
     return (0);
