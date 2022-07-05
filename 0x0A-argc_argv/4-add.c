@@ -40,22 +40,22 @@ argIndex++;
 }
 else
 {
-printf("Error");
+printf("Error\n");
 return (1);
 }
 }
 else
 {
-printf("Error");
+printf("Error\n");
 return (1);
 }
 
 }
-printf("%d", argSum);
+printf("%d\n", argSum);
 }
 else
 {
-printf("0");
+printf("0\n");
 }
 return (0);
 }
