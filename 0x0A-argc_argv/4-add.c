@@ -4,7 +4,7 @@
 #include <ctype.h>
 #include <string.h>
 
-int containsChars(char *iString);
+int containsChars(const char *iString);
 
 /**
  * main - Deep down in Louisiana close to New Orleans
@@ -17,63 +17,65 @@ int containsChars(char *iString);
 int main(int argc, char *argv[])
 {
 
-int argIndex = 1;
-int checkString;
-int currentInt;
-int argSum = 0;
+    int argIndex = 1;
+    int checkString;
+    int currentInt;
+    int argSum = 0;
 
-if (argc > 1)
-{
+    if (argc > 1)
+    {
 
-while (argIndex < argc)
-{
+        while (argIndex < argc)
+        {
 
-checkString = containsChars(argv[argIndex]);
+            checkString = containsChars(argv[argIndex]);
+            if (checkString == 0)
+            {
+                currentInt = atoi(argv[argIndex]);
+                argSum = argSum + currentInt;
+                argIndex++;
+            }
+            else
+            {
+                printf("Error\n");
+                return (1);
+            }
 
-if (checkString == 0)
-{
-currentInt = atoi(argv[argIndex]);
-argSum = argSum + currentInt;
-argIndex++;
-}
-else
-{
-printf("Error\n");
-return (1);
-}
+        }
 
-}
-printf("%d\n", argSum);
-}
-else
-{
-printf("0\n");
-}
-return (0);
-}
+        printf("%d\n", argSum);
 
-int containsChars(char *iString)
-{
-
-int inputLength = sizeof(iString);
-int inputIndex = 0;
-char currentChar;
-
-while (inputIndex < inputLength)
-{
-
-currentChar = iString[inputIndex];
-if(isalpha(currentChar))
-{
-return (1);
-}
-else
-{
-inputIndex++;
+    }
+    else
+    {
+        printf("0\n");
+    }
+    return (0);
 }
 
-}
+int containsChars(const char *iString)
+{
 
-return (0);
+    int inputLength = sizeof(iString);
+    int inputIndex = 0;
+    char currentChar;
+
+    while (inputIndex < inputLength)
+    {
+
+        currentChar = iString[inputIndex];
+        printf("Current Char: %c\n", currentChar);
+        if(isalpha(currentChar))
+        {
+            return (1);
+        }
+        else
+        {
+            inputIndex++;
+        }
+
+    }
+
+    return (0);
 
 }
