@@ -33,16 +33,8 @@ checkString = containsChars(argv[argIndex]);
 if (checkString == 0)
 {
 currentInt = atoi(argv[argIndex]);
-if (currentInt > 0)
-{
 argSum = argSum + currentInt;
 argIndex++;
-}
-else
-{
-printf("Error\n");
-return (1);
-}
 }
 else
 {
