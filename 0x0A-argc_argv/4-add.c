@@ -60,6 +60,8 @@ int containsChars(const char *iString)
     int inputIndex = 0;
     char currentChar;
 
+    printf("Input Length %d\n", inputLength);
+
     while (inputIndex < inputLength)
     {
 
