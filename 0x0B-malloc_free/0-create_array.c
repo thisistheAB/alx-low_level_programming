@@ -19,7 +19,7 @@ if (size == 0)
 return (NULL);
 }
 
-resultArray = malloc(sizeof(resultArray) * size);
+resultArray = malloc(size);
 
 if (resultArray == NULL)
 {
