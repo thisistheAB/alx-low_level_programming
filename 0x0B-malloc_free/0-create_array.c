@@ -21,11 +21,6 @@ return (NULL);
 
 resultArray = malloc(size);
 
-if (resultArray == NULL)
-{
-return (NULL);
-}
-
 resultArray[0] = c;
 
 return (resultArray);
