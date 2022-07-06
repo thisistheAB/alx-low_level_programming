@@ -12,10 +12,9 @@
 char *create_array(unsigned int size, char c)
 {
 
-char resultArray[size];
-resultArray[0] = c;
+char *resultArray;
 
-/*if (size == 0)
+if (size == 0)
 {
 return (NULL);
 }
@@ -27,7 +26,7 @@ if (resultArray == NULL)
 return (NULL);
 }
 
-resultArray[0] = c;*/
+resultArray[0] = c;
 
 return (resultArray);
 }
