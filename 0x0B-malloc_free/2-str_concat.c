@@ -16,7 +16,7 @@ char *result;
 result = malloc(sizeof(s1) + sizeof(s2));
 
 strncat(result, s1, sizeof(s1) + sizeof(s2));
-strncat(result, s2, sizeof(s1) + sizeof(s2));
+strncat(result, s2, sizeof(result));
 
 return (result);
 
