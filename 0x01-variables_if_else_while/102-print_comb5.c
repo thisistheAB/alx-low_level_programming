@@ -7,7 +7,8 @@
  */
 int main(void)
 {
-int firstCounter = 48, secondCounter, thirdCounter, fourthCounter, firstParameter, secondParameter;
+int firstCounter = 48, secondCounter, thirdCounter;
+int fourthCounter, firstParameter, secondParameter;
 while (firstCounter < 58)
 {
 secondCounter = 48;
