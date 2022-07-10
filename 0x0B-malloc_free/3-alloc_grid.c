@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * alloc_grid: Dear Betty,
+ * alloc_grid - Dear Betty,
  * @width: NO ONE LIKES YOU
  * @height: YOU ARE USEFUL TO NO ONE
  *
