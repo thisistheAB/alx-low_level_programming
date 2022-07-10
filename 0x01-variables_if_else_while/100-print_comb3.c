@@ -1,63 +1,36 @@
 #include <stdio.h>
-#include <stdbool.h>
-/* more headers goes there */
 
 /**
- * main - This is the main function, FUCK BETTY!!!!!!!!
+ * main - Betty is a dick
  *
- * Return: This is bullshit
+ * Return: NOTHING. ABSOLUTELY NOTHING
  */
 int main(void)
 {
+int firstCounter, secondCounter;
 
-    int number = 1;
+secondCounter = 48;
 
-    int pos1;
-    int pos2;
-
-    int comb2;
-
-    int remainder;
-    int j;
-
-    int i = 0;
-    while (i < 100) {
-
-        if (number > 9){
-
-            pos1 = number/10;
-            pos2 = number%10;
-
-            comb2 = 0;
-
-            j = number;
-
-            while (j != 0) {
-                remainder = j % 10;
-                comb2 = comb2 * 10 + remainder;
-                j /= 10;
-            }
-
-            if (pos2 != 0 && comb2 > number) {
-                putchar(pos1 + '0');
-                putchar(pos2 + '0');
-                if (number != 89){
-                    putchar(',');
-                    putchar(' ');
-                }
-            }
-
-        }else{
-            putchar('0');
-            putchar(number + '0');
-            putchar(',');
-            putchar(' ');
-        }
-
-        number++;
-        i++;
-
-    }
-
-    return (0);
+while (secondCounter < 58)
+{
+firstCounter = 48;
+while (firstCounter < 58)
+{
+if (secondCounter != firstCounter && secondCounter < firstCounter)
+{
+putchar(secondCounter);
+putchar(firstCounter);
+if (firstCounter == 57 && secondCounter == 56)
+{
+break;
+}
+putchar(',');
+putchar(' ');
+}
+firstCounter++;
+}
+secondCounter++;
+}
+putchar('\n');
+return (0);
 }
