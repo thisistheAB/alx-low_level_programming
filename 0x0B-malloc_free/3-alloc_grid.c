@@ -1,32 +1,46 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 /**
+ * alloc_grid: Dear Betty,
+ * @width: NO ONE LIKES YOU
+ * @height: YOU ARE USEFUL TO NO ONE
  *
+ * Return: Just curl up and DIE!!!
  */
 int **alloc_grid(int width, int height)
 {
+int **gridout;
+int i, j;
 
-int **result;
-int widthIndex;
-int heightIndex = 0;
-
-malloc(height);
-malloc(width);
-result = malloc(width * height);
-
-while (heightIndex < height)
+if (width < 1 || height < 1)
 {
-widthIndex = 0;
-while (widthIndex < width)
-{
-result[heightIndex][widthIndex] = 0;
-widthIndex++;
-}
-heightIndex++;
+return (NULL);
 }
 
-return (result);
 
+gridout = malloc(height * sizeof(int *));
+if (gridout == NULL)
+{
+free(gridout);
+return (NULL);
+}
+
+for (i = 0; i < height; i++)
+{
+gridout[i] = malloc(width * sizeof(int));
+if (gridout[i] == NULL)
+{
+for (i--; i >= 0; i--)
+free(gridout[i]);
+free(gridout);
+return (NULL);
+}
+}
+
+for (i = 0; i < height; i++)
+for (j = 0; j < width; j++)
+gridout[i][j] = 0;
+
+return (gridout);
 }
