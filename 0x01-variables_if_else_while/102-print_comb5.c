@@ -7,10 +7,7 @@
  */
 int main(void)
 {
-int firstCounter = 48, secondCounter, thirdCounter, fourthCounter;
-int firstParameter;
-int secondParameter;
-
+int firstCounter = 48, secondCounter, thirdCounter, fourthCounter, firstParameter, secondParameter;
 while (firstCounter < 58)
 {
 secondCounter = 48;
@@ -31,8 +28,11 @@ putchar(secondCounter);
 putchar(' ');
 putchar(thirdCounter);
 putchar(fourthCounter);
-if (firstCounter == 57 && secondCounter == 56 && thirdCounter == 57 && fourthCounter == 57)
-    break;
+if (firstCounter == 57 && secondCounter == 56
+&& thirdCounter == 57 && fourthCounter == 57)
+{
+break;
+}
 putchar(',');
 putchar(' ');
 }
