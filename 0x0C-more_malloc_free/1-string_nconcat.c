@@ -47,7 +47,7 @@ resultString[indexCounter] = s2[indexCounter - firstStringLength];
 
 indexCounter++;
 }
-resultString[indexCounter] = '\0';
+resultString[indexCounter - 1] = '\0';
 
 return (resultString);
 }
