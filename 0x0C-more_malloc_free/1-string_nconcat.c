@@ -53,7 +53,12 @@ return (resultString);
 }
 
 
-
+/**
+ * string_nconcat - And if somebody hurts you, I wanna fight
+ * @inputString: But my hand's been broken one too many times
+ *
+ * Return: So I'll use my voice, I'll be fucking rude
+ */
 int getLength(char *inputString)
 {
 
