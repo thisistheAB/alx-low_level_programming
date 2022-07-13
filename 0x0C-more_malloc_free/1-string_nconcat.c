@@ -34,6 +34,8 @@ if (n > secondStringLength)
 
 resultLength = firstStringLength + n;
 resultString = malloc(resultLength);
+if (resultString == NULL)
+        return (NULL);
 
 while (indexCounter < resultLength)
 {
