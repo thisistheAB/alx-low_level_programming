@@ -26,8 +26,8 @@ s1 = "";
 if (s2 == NULL)
 s2 = "";
 
-firstStringLength = strlen(s1);
-secondStringLength = strlen(s2);
+firstStringLength = sizeof(s1);
+secondStringLength = sizeof(s2);
 
 if (n > secondStringLength)
 n = secondStringLength;
