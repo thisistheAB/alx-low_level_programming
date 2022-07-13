@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
-#include <string.h>
+
+int getLength(char *inputString);
 
 /**
  * string_nconcat - And I wanna kiss you make you feel alright
@@ -26,8 +27,8 @@ s1 = "";
 if (s2 == NULL)
 s2 = "";
 
-firstStringLength = sizeof(s1);
-secondStringLength = sizeof(s2);
+firstStringLength = getLength(s1);
+secondStringLength = getLength(s2);
 
 if (n > secondStringLength)
 n = secondStringLength;
@@ -49,4 +50,19 @@ indexCounter++;
 resultString[indexCounter] = '\0';
 
 return (resultString);
+}
+
+
+
+int getLength(char *inputString)
+{
+
+int indexCounter = 0;
+
+while (inputString[indexCounter] != '\0')
+{
+indexCounter++;
+}
+
+return (indexCounter);
 }
