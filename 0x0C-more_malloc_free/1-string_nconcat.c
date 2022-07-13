@@ -21,28 +21,28 @@ unsigned int secondStringLength;
 unsigned int indexCounter = 0;
 
 if (s1 == NULL)
-        s1 = "";
+s1 = "";
 
 if (s2 == NULL)
-        s2 = "";
+s2 = "";
 
 firstStringLength = strlen(s1);
 secondStringLength = strlen(s2);
 
 if (n > secondStringLength)
-        n = secondStringLength;
+n = secondStringLength;
 
 resultLength = firstStringLength + n;
 resultString = malloc(resultLength);
 if (resultString == NULL)
-        return (NULL);
+return (NULL);
 
 while (indexCounter < resultLength)
 {
 if (indexCounter < firstStringLength)
-        resultString[indexCounter] = s1[indexCounter];
+resultString[indexCounter] = s1[indexCounter];
 else
-        resultString[indexCounter] = s2[indexCounter - firstStringLength];
+resultString[indexCounter] = s2[indexCounter - firstStringLength];
 
 indexCounter++;
 }
