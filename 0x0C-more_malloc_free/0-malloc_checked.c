@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 
-/*
+/**
  * malloc_checked - Winner winner chicken dinner
  * @b: I tried so hard and got so far
  *
@@ -18,6 +18,6 @@ if (resultValue == NULL)
 exit(98);
 }
 
-return resultValue;
+return (resultValue);
 
 }
