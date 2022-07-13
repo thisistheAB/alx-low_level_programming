@@ -18,7 +18,7 @@ unsigned int resultLength;
 char *resultString;
 unsigned int firstStringLength;
 unsigned int secondStringLength;
-int indexCounter = 0;
+unsigned int indexCounter = 0;
 
 if (s1 == NULL)
         s1 = "";
