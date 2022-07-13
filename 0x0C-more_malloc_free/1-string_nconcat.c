@@ -1,8 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
 
-int getLength(char *inputString);
-
 /**
  * string_nconcat - And I wanna kiss you make you feel alright
  * @s1: I'm just so tired to share my nights
@@ -15,11 +13,8 @@ int getLength(char *inputString);
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 
-unsigned int resultLength;
-char *resultString;
-unsigned int firstStringLength;
-unsigned int secondStringLength;
-unsigned int indexCounter = 0;
+char *sout;
+unsigned int ls1, ls2, lsout, i;
 
 if (s1 == NULL)
 s1 = "";
@@ -27,47 +22,29 @@ s1 = "";
 if (s2 == NULL)
 s2 = "";
 
-firstStringLength = getLength(s1);
-secondStringLength = getLength(s2);
+for (ls1 = 0; s1[ls1] != '\0'; ls1++)
+;
 
-if (n > secondStringLength)
-n = secondStringLength;
+for (ls2 = 0; s2[ls2] != '\0'; ls2++)
+;
 
-resultLength = firstStringLength + n;
-resultString = malloc(resultLength);
-if (resultString == NULL)
+if (n > ls2)
+n = ls2;
+
+lsout = ls1 + n;
+
+sout = malloc(lsout + 1);
+
+if (sout == NULL)
 return (NULL);
 
-while (indexCounter < resultLength)
-{
-if (indexCounter < firstStringLength)
-resultString[indexCounter] = s1[indexCounter];
+for (i = 0; i < lsout; i++)
+if (i < ls1)
+sout[i] = s1[i];
 else
-resultString[indexCounter] = s2[indexCounter - firstStringLength];
+sout[i] = s2[i - ls1];
 
-indexCounter++;
-}
-resultString[indexCounter - 1] = '\0';
+sout[i] = '\0';
 
-return (resultString);
-}
-
-
-/**
- * string_nconcat - And if somebody hurts you, I wanna fight
- * @inputString: But my hand's been broken one too many times
- *
- * Return: So I'll use my voice, I'll be fucking rude
- */
-int getLength(char *inputString)
-{
-
-int indexCounter = 0;
-
-while (inputString[indexCounter] != '\0')
-{
-indexCounter++;
-}
-
-return (indexCounter);
+return (sout);
 }
