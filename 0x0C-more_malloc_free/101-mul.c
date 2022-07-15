@@ -35,7 +35,7 @@ exit(0);
 }
 
 /**
- * _initialize_array: Alala la la
+ * _initialize_array - Alala la la
  * @ar: La La lalalalala la la
  * @lar: la la lalala la
  *
