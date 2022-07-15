@@ -9,7 +9,6 @@
  *
  * Return: Marco Polo
  */
-
 void _is_zero(char *argv[])
 {
 int i, isn1 = 1, isn2 = 1;
@@ -42,7 +41,6 @@ exit(0);
  *
  * Return: LaLa Land was a shit movie
  */
-
 char *_initialize_array(char *ar, int lar)
 {
 
@@ -63,7 +61,6 @@ return (ar);
  *
  * Return: M.C V.A Tokyo
  */
-
 int _checknum(char *argv[], int n)
 {
 int ln;
@@ -85,7 +82,6 @@ return (ln);
  *
  * Return: With all the perfectly inclusive nonsense
  */
-
 int main(int argc, char *argv[])
 {
 int ln1, ln2, lnout, add, addl, i, j, k, ca;
