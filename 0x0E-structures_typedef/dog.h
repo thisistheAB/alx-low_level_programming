@@ -12,14 +12,14 @@ typedef struct dog dog_t;
  * @age: Walking around grabbing your you know what
  * @owner: Talking to you know who
  *
- * Description: But if we can hump dead animals, then there's no reason that..
+ * Description: But if we can hump dead animals, then there's no reason that
  *
  */
 struct dog
 {
-    char *name;
-    float age;
-    char *owner;
+char *name;
+float age;
+char *owner;
 };
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
